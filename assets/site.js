@@ -2,7 +2,9 @@
 (function () {
   var $ = function (s, c) { return (c || document).querySelector(s); };
   var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); };
-  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  /* el sistema puede tener las animaciones apagadas (Windows: Efectos de animación).
+     Las de este sitio son suaves, así que se muestran igual; solo la marquesina
+     de marcas respeta esa preferencia, vía CSS. */
 
   $$('[data-year]').forEach(function (el) { el.textContent = new Date().getFullYear(); });
 
@@ -69,7 +71,7 @@
       o.strip.style.transform = 'translateY(-' + o.travel + 'em)';
     });
   };
-  if (reduce || !('IntersectionObserver' in window)) {
+  if (!('IntersectionObserver' in window)) {
     drums.forEach(restDrum);
   } else {
     var drumIO = new IntersectionObserver(function (es) {
@@ -85,7 +87,7 @@
   /* apariciones al scrollear */
   var nodes = $$('[data-rv]');
   var show = function (el) { el.setAttribute('data-shown', '1'); };
-  if (reduce || !('IntersectionObserver' in window)) {
+  if (!('IntersectionObserver' in window)) {
     nodes.forEach(show);
   } else {
     var io = new IntersectionObserver(function (es) {
