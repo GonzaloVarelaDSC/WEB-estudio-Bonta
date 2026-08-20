@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Créditos fotográficos — Estudio Bonta</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="assets/img/logo-mark.png">
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+  .credits-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 22px; }
+  .credits-list li { padding-bottom: 22px; border-bottom: 1px solid var(--color-divider); font-family: var(--font-ui); font-size: 13.5px; line-height: 1.6; color: var(--color-neutral-700); }
+  .credits-list strong { font-family: var(--font-heading); font-weight: 600; font-size: 17px; color: var(--color-text); display: block; margin-bottom: 4px; }
+</style>
+</head>
+<body>
+<div style="background:var(--color-bg);color:var(--color-text);font-family:var(--font-body);min-height:100vh">
+
+  <header style="border-bottom:1px solid var(--color-divider)">
+    <div data-pad style="max-width:1240px;margin:0 auto;padding:0 40px;height:84px;display:flex;align-items:center;gap:32px">
+      <a href="index.html" style="display:flex;align-items:center;gap:13px;text-decoration:none;color:var(--color-text)">
+        <img src="assets/img/logo-mark.png" alt="Estudio Bonta" width="38" height="38" style="display:block;width:38px;height:38px">
+        <span style="font-family:var(--font-ui);font-size:12px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--color-text);line-height:1.3">Estudio<br><span style="font-weight:500;letter-spacing:0.26em;color:var(--brand)">Bonta</span></span>
+      </a>
+      <a href="index.html" style="margin-left:auto;font-family:var(--font-ui);font-size:12px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-neutral-800)">← Volver al sitio</a>
+    </div>
+  </header>
+
+  <main data-pad style="max-width:760px;margin:0 auto;padding:82px 40px 96px">
+    <p style="font-family:var(--font-ui);font-size:11px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:var(--brand);margin:0 0 20px">Créditos fotográficos</p>
+    <h1 style="font-family:var(--font-heading);font-weight:400;font-size:clamp(30px,3.4vw,44px);line-height:1.06;letter-spacing:-0.018em;margin:0 0 20px">Fotos de referencia</h1>
+    <p style="font-size:15.5px;line-height:1.72;color:var(--color-neutral-700);margin:0 0 40px">Algunas fotos en este sitio son imágenes bajo licencias Creative Commons, usadas mientras sumamos fotos propias del estudio. Vía <a href="https://openverse.org" target="_blank" rel="noopener">Openverse</a>.</p>
+    <ul class="credits-list" data-credits>
+      <li>Cargando créditos…</li>
+    </ul>
+  </main>
+
+  <footer style="border-top:1px solid var(--color-divider)">
+    <div data-pad style="max-width:1240px;margin:0 auto;padding:44px 40px;font-family:var(--font-ui);font-size:12px;color:var(--color-neutral-600)">
+      © <span data-year></span> Estudio Bonta
+    </div>
+  </footer>
+</div>
+<script src="assets/js/site.js"></script>
+<script src="assets/js/credits-render.js"></script>
+</body>
+</html>

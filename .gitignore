@@ -1,0 +1,8 @@
+# Local dev/reference files — not part of the published site
+.devserver.ps1
+.claude/
+*.zip
+Imagenes para la web/
+LOGO BONTA*.png
+27852_2.jpeg
+width(1200).jpg

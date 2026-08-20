@@ -1,0 +1,35 @@
+{
+  "cap-senaletica": {
+    "src": "assets/img/cap-senaletica.jpg",
+    "title": "Shorty's",
+    "creator": "wwward0",
+    "creator_url": "https://www.flickr.com/photos/15802578@N00",
+    "license": "cc0",
+    "license_version": "1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/15802578@N00/51558190153",
+    "source": "flickr"
+  },
+  "cap-eventos": {
+    "src": "assets/img/cap-eventos.jpg",
+    "title": "StrideRite Storefront",
+    "creator": "Phil Manker",
+    "creator_url": "https://www.flickr.com/photos/philmanker/",
+    "license": "by",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/32266112@N02/3717575829",
+    "source": "flickr"
+  },
+  "cap-piezas": {
+    "src": "assets/img/cap-piezas.jpg",
+    "title": "Upper playfield acrylic parts produced at Metalab hackerspace in Vienna",
+    "creator": "Felipe C. da S. Sanches",
+    "creator_url": "https://www.flickr.com/photos/felipesanches/",
+    "license": "by-sa",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/felipesanches/5220257040",
+    "source": "flickr"
+  }
+}

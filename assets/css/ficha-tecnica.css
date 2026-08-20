@@ -1,0 +1,24 @@
+/* overrides site.css for this page only — softer wash tint */
+body {
+  --wash: color-mix(in srgb, #13077a 5%, #f3f2f2);
+  --wash-line: color-mix(in srgb, #13077a 14%, #f3f2f2);
+}
+
+.f1:hover { color:var(--brand) !important;border-bottom-color:var(--brand) !important }
+.f2:hover { background:var(--brand-soft) !important }
+.f3:hover { background:color-mix(in srgb, var(--brand) 5%, transparent) !important }
+.f4:hover { background:color-mix(in srgb, var(--brand) 5%, transparent) !important }
+.f5:hover { background:color-mix(in srgb, var(--brand) 5%, transparent) !important }
+.f6:hover { background:color-mix(in srgb, var(--brand) 5%, transparent) !important }
+.f7:hover { background:color-mix(in srgb, var(--brand) 5%, transparent) !important }
+.f8:hover { background:color-mix(in srgb, var(--brand) 5%, transparent) !important }
+.f9:hover { background:color-mix(in srgb, var(--brand) 5%, transparent) !important }
+.f10:hover { background:color-mix(in srgb, var(--brand) 5%, transparent) !important }
+.f11:hover { background:var(--brand-soft) !important }
+.f12:hover { background:color-mix(in srgb, #13077a 84%, #000000) !important }
+
+@media (max-width: 820px) {
+  [data-split] { grid-template-columns: minmax(0,1fr) !important; gap: 36px !important; }
+  table { display: block; overflow-x: auto; }
+}
+@media (max-width: 620px) { [data-pad] { padding-left: 22px !important; padding-right: 22px !important; } }
