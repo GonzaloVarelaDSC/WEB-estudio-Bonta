@@ -38,12 +38,7 @@
   @media (max-width: 620px) {
     [data-pad] { padding-left: 22px !important; padding-right: 22px !important; }
     [data-wa-float], [data-wa-float] img { right: 18px !important; bottom: 18px !important; width: 54px !important; height: 54px !important; }
-  }
-  @media (max-width: 760px) { [data-promo-sep], [data-promo-long] { display: none !important; } }
-  @media (max-width: 900px) { [data-masthead-aside] { display: none !important; } }
-  @media (max-width: 1060px) {
-    [data-grid="cap"] { background: transparent !important; gap: 24px !important; }
-    [data-grid="cap"] > article[data-card] { box-shadow: 0 0 0 1px var(--color-divider); }
+    [data-promo-carousel] { max-width: 100% !important; }
   }
 
 
@@ -58,30 +53,30 @@
 .x8:hover { background:color-mix(in srgb, var(--color-bg) 12%, transparent) !important;border-color:var(--color-bg) !important }
 .x9:hover { color:var(--color-bg) !important;border-bottom-color:var(--color-bg) !important }
 .x10:hover { background:var(--paper-2) !important }
-.x11:hover { border-left-color:var(--brand) !important;color:var(--brand) !important;padding-left:20px !important }
-.x12:hover { border-left-color:var(--brand) !important;color:var(--brand) !important;padding-left:20px !important }
-.x13:hover { border-left-color:var(--brand) !important;color:var(--brand) !important;padding-left:20px !important }
-.x14:hover { border-left-color:var(--brand) !important;color:var(--brand) !important;padding-left:20px !important }
+.x11:hover { background:var(--brand) !important;color:var(--color-bg) !important }
+.x12:hover { background:var(--brand) !important;color:var(--color-bg) !important }
+.x13:hover { background:var(--brand) !important;color:var(--color-bg) !important }
+.x14:hover { background:var(--brand) !important;color:var(--color-bg) !important }
 .x15:hover { background:var(--paper-2) !important }
-.x16:hover { border-left-color:var(--brand) !important;color:var(--brand) !important;padding-left:20px !important }
-.x17:hover { border-left-color:var(--brand) !important;color:var(--brand) !important;padding-left:20px !important }
-.x18:hover { border-left-color:var(--brand) !important;color:var(--brand) !important;padding-left:20px !important }
-.x19:hover { border-left-color:var(--brand) !important;color:var(--brand) !important;padding-left:20px !important }
+.x16:hover { background:var(--brand) !important;color:var(--color-bg) !important }
+.x17:hover { background:var(--brand) !important;color:var(--color-bg) !important }
+.x18:hover { background:var(--brand) !important;color:var(--color-bg) !important }
+.x19:hover { background:var(--brand) !important;color:var(--color-bg) !important }
 .x20:hover { background:var(--paper-2) !important }
-.x21:hover { border-left-color:var(--brand) !important;color:var(--brand) !important;padding-left:20px !important }
-.x22:hover { border-left-color:var(--brand) !important;color:var(--brand) !important;padding-left:20px !important }
-.x23:hover { border-left-color:var(--brand) !important;color:var(--brand) !important;padding-left:20px !important }
-.x24:hover { border-left-color:var(--brand) !important;color:var(--brand) !important;padding-left:20px !important }
+.x21:hover { background:var(--brand) !important;color:var(--color-bg) !important }
+.x22:hover { background:var(--brand) !important;color:var(--color-bg) !important }
+.x23:hover { background:var(--brand) !important;color:var(--color-bg) !important }
+.x24:hover { background:var(--brand) !important;color:var(--color-bg) !important }
 .x25:hover { background:var(--paper-2) !important }
-.x26:hover { border-left-color:var(--brand) !important;color:var(--brand) !important;padding-left:20px !important }
-.x27:hover { border-left-color:var(--brand) !important;color:var(--brand) !important;padding-left:20px !important }
-.x28:hover { border-left-color:var(--brand) !important;color:var(--brand) !important;padding-left:20px !important }
-.x29:hover { border-left-color:var(--brand) !important;color:var(--brand) !important;padding-left:20px !important }
+.x26:hover { background:var(--brand) !important;color:var(--color-bg) !important }
+.x27:hover { background:var(--brand) !important;color:var(--color-bg) !important }
+.x28:hover { background:var(--brand) !important;color:var(--color-bg) !important }
+.x29:hover { background:var(--brand) !important;color:var(--color-bg) !important }
 .x30:hover { background:var(--paper-2) !important }
-.x31:hover { border-left-color:var(--brand) !important;color:var(--brand) !important;padding-left:20px !important }
-.x32:hover { border-left-color:var(--brand) !important;color:var(--brand) !important;padding-left:20px !important }
-.x33:hover { border-left-color:var(--brand) !important;color:var(--brand) !important;padding-left:20px !important }
-.x34:hover { border-left-color:var(--brand) !important;color:var(--brand) !important;padding-left:20px !important }
+.x31:hover { background:var(--brand) !important;color:var(--color-bg) !important }
+.x32:hover { background:var(--brand) !important;color:var(--color-bg) !important }
+.x33:hover { background:var(--brand) !important;color:var(--color-bg) !important }
+.x34:hover { background:var(--brand) !important;color:var(--color-bg) !important }
 .x35:hover { background:var(--ink) !important }
 .x36:hover { border-color:color-mix(in srgb, var(--gold) 62%, var(--color-surface)) !important }
 .x37:hover { border-color:color-mix(in srgb, var(--gold) 62%, var(--color-surface)) !important }
@@ -102,10 +97,10 @@
 .x52:hover { color:var(--brand) !important }
 .x53:hover { transform:translateY(0) scale(1.06) !important }
 .x54:hover { border-color:color-mix(in srgb, var(--gold) 55%, var(--wash-line)) !important }
-.x55:hover { border-left-color:var(--brand) !important;color:var(--brand) !important;padding-left:20px !important }
-.x56:hover { border-left-color:var(--brand) !important;color:var(--brand) !important;padding-left:20px !important }
-.x57:hover { border-left-color:var(--brand) !important;color:var(--brand) !important;padding-left:20px !important }
-.x58:hover { border-left-color:var(--brand) !important;color:var(--brand) !important;padding-left:20px !important }
+.x55:hover { background:var(--brand) !important;color:var(--color-bg) !important }
+.x56:hover { background:var(--brand) !important;color:var(--color-bg) !important }
+.x57:hover { background:var(--brand) !important;color:var(--color-bg) !important }
+.x58:hover { background:var(--brand) !important;color:var(--color-bg) !important }
 
 /* espacios para fotos — reemplazá cada .slot por <img src="assets/img/xxx.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block"> */
 .slot { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; text-align: center; padding: 18px; box-sizing: border-box; background: var(--color-surface); color: var(--color-neutral-600); font-family: var(--font-ui); font-size: 11.5px; line-height: 1.55; letter-spacing: 0.02em; }

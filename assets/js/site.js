@@ -70,6 +70,17 @@
     setTimeout(function () { nodes.forEach(show); }, 3500);
   }
 
+  /* carrusel de promos en la franja superior */
+  var promoSlides = $$('[data-promo-slide]');
+  if (promoSlides.length > 1 && !reduce) {
+    var promoI = 0;
+    setInterval(function () {
+      promoSlides[promoI].style.opacity = '0';
+      promoI = (promoI + 1) % promoSlides.length;
+      promoSlides[promoI].style.opacity = '1';
+    }, 4500);
+  }
+
   /* carrusel del hero */
   var slides = $$('[data-hero-slide]'), dots = $$('[data-hero-dot]'), timer, i = 0;
   var INTERVAL = 7000;

@@ -8,15 +8,17 @@
 <link rel="icon" href="assets/img/logo-mark.png">
 <link rel="stylesheet" href="assets/css/tokens.css">
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css?v=2">
+<link rel="stylesheet" href="assets/css/site.css?v=3">
 </head>
 <body>
 <div style="background:var(--color-bg);color:var(--color-text);font-family:var(--font-body);min-height:100vh">
 
   <div style="background:var(--paper-2);border-bottom:1px solid var(--color-divider)">
-    <div data-pad style="max-width:1240px;margin:0 auto;padding:9px 40px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-family:var(--font-ui);font-size:10.5px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--color-neutral-700)">
-      <span style="white-space:nowrap">Impresión gran formato · Fabricación · Instalación</span>
-      <span data-masthead-aside style="display:flex;gap:22px;white-space:nowrap"><span>Buenos Aires</span></span>
+    <div data-pad style="max-width:1240px;margin:0 auto;padding:9px 40px;display:flex;justify-content:center">
+      <div data-promo-carousel style="position:relative;width:100%;max-width:680px;height:15px;overflow:hidden">
+        <span data-promo-slide style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:1;transition:opacity .7s ease;font-family:var(--font-ui);font-size:10.5px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--color-neutral-700);white-space:nowrap;text-align:center">Espacio para tu promoción — reemplazá este texto por la novedad que quieras mostrar</span>
+        <span data-promo-slide style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .7s ease;font-family:var(--font-ui);font-size:10.5px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--color-neutral-700);white-space:nowrap;text-align:center">Ej: "Escribinos por WhatsApp y coordinamos tu proyecto hoy"</span>
+      </div>
     </div>
   </div>
 
@@ -26,7 +28,7 @@
         <img src="assets/img/logo-mark.png" alt="Estudio Bonta" width="42" height="42" style="display:block;width:42px;height:42px">
         <span style="font-family:var(--font-ui);font-size:12px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--color-text);line-height:1.3">Estudio<br><span style="font-weight:500;letter-spacing:0.26em;color:var(--brand)">Bonta</span></span>
       </a>
-      <nav data-nav="1" style="display:flex;gap:28px;margin-left:auto">
+      <nav data-nav="1" style="display:flex;gap:28px;flex:1;justify-content:center">
         <a href="#capacidades" style="font-family:var(--font-ui);font-size:12px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-neutral-800);padding-bottom:3px;border-bottom:1px solid transparent;transition:border-color .25s, color .25s" class="x2">Capacidades</a>
         <a href="#proceso" style="font-family:var(--font-ui);font-size:12px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-neutral-800);padding-bottom:3px;border-bottom:1px solid transparent;transition:border-color .25s, color .25s" class="x3">Proceso</a>
         <a href="#trabajos" style="font-family:var(--font-ui);font-size:12px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-neutral-800);padding-bottom:3px;border-bottom:1px solid transparent;transition:border-color .25s, color .25s" class="x4">Trabajos</a>
@@ -84,7 +86,7 @@
         <p style="margin:0;font-size:14.5px;line-height:1.66;color:var(--color-neutral-700)">Respuesta a tu consulta por WhatsApp o mail, en horario hábil.</p>
       </div>
       <div data-rv style="opacity:0;transform:translateY(14px);transition:opacity .8s ease,transform .8s ease;transition-delay:.16s;padding:42px 0 40px 34px;border-left:1px solid var(--color-divider)">
-        <div style="font-family:var(--font-ui);font-size:40px;font-weight:500;line-height:1;letter-spacing:-0.02em;font-feature-settings:'tnum';color:var(--brand);margin-bottom:14px"><span data-count data-count-from="0" data-count-to="360">0</span>° <span style="font-size:19px;font-weight:500;color:var(--color-neutral-700);letter-spacing:0.04em">DE SOLUCIÓN</span></div>
+        <div style="font-family:var(--font-ui);font-size:40px;font-weight:500;line-height:1;letter-spacing:-0.02em;font-feature-settings:'tnum';color:var(--brand);margin-bottom:14px"><span data-count data-count-from="0" data-count-to="100">0</span>% <span style="font-size:19px;font-weight:500;color:var(--color-neutral-700);letter-spacing:0.04em">A MEDIDA</span></div>
         <p style="margin:0;font-size:14.5px;line-height:1.66;color:var(--color-neutral-700)">Nos contás el problema — diseño, materiales, técnica y montaje los resolvemos nosotros.</p>
       </div>
     </div>
@@ -93,12 +95,8 @@
   <section id="capacidades" data-pad style="max-width:1240px;margin:0 auto;padding:132px 40px 0">
     <div data-split="head" data-rv style="opacity:0;transform:translateY(14px);transition:opacity .8s ease,transform .8s ease;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px;align-items:end;padding-bottom:44px;border-bottom:1px solid var(--color-divider)">
       <div>
-        <div aria-hidden="true" style="display:flex;align-items:center;gap:10px;margin-bottom:22px">
-          <span style="width:38px;height:1px;background:var(--gold);display:block"></span>
-          <span style="width:5px;height:5px;background:var(--gold);display:block;transform:rotate(45deg)"></span>
-        </div>
-        <p style="display:flex;align-items:center;gap:11px;font-family:var(--font-ui);font-size:12px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--brand);margin:0 0 20px"><img src="assets/img/logo-mark.png" alt="" width="15" height="15" style="display:block;width:15px;height:15px;opacity:0.9"><span style="color:var(--gold);font-size:15px">01</span> — Capacidades</p>
-        <h2 style="font-family:var(--font-heading);font-weight:400;font-size:clamp(38px,4.1vw,58px);line-height:1.04;letter-spacing:-0.018em;margin:0;max-width:20ch">Imprimimos y fabricamos lo que tu marca necesite</h2>
+        <p style="font-family:var(--font-ui);font-size:15px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--brand);margin:0 0 22px">Capacidades</p>
+        <h2 style="font-family:var(--font-ui);font-weight:500;font-size:clamp(38px,4.1vw,58px);line-height:1.04;letter-spacing:-0.02em;margin:0;max-width:20ch">Imprimimos y fabricamos lo que tu marca necesite</h2>
       </div>
       <p style="margin:0;font-size:16px;line-height:1.72;color:var(--color-neutral-700);max-width:44ch">Elegí la categoría más parecida a lo que tenés en mente — el resto lo resolvemos juntos.</p>
     </div>
@@ -108,97 +106,95 @@
         <div class="slot" data-slot="bonta-cap-6" style="height:100%"><span>Cuadro o placa bajo acrílico — pieza colgada, con luz que muestre la profundidad y el canto pulido.</span></div>
       </div>
       <div style="padding:38px 40px 40px;display:flex;flex-direction:column;justify-content:center;gap:20px">
-        <span style="display:inline-flex;align-items:center;gap:8px;align-self:flex-start;font-family:var(--font-ui);font-size:10.5px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--color-bg);background:var(--brand);border-radius:999px;padding:7px 14px 7px 12px"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 14.6 9h7.4l-6 4.4 2.3 7.1L12 16 5.7 20.5 8 13.4 2 9h7.4Z"/></svg>Especialidad Bonta</span>
-        <h3 style="font-family:var(--font-heading);font-weight:600;font-size:34px;letter-spacing:-0.014em;margin:0">Impresión bajo acrílico</h3>
+        <span style="display:inline-flex;align-items:center;align-self:flex-start;font-family:var(--font-ui);font-size:10.5px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--color-bg);background:var(--brand);border-radius:999px;padding:7px 14px">Lo más destacado</span>
+        <h3 style="font-family:var(--font-ui);font-weight:600;font-size:30px;letter-spacing:-0.016em;margin:0">Impresión bajo acrílico</h3>
         <p style="margin:0;font-size:15.5px;line-height:1.75;color:var(--color-neutral-800);max-width:46ch">La terminación premium para lo que tiene que verse impecable: la imagen queda protegida bajo una lámina de acrílico transparente, con una profundidad y un brillo que ningún otro método iguala. Es el trabajo que más nos define.</p>
-        <ul style="list-style:none;margin:6px 0 0;padding:0;display:flex;flex-direction:column;gap:1px;background:var(--wash-line)">
-          <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);background:var(--wash);padding:11px 0 11px 15px;border-left:2px solid var(--color-neutral-300);transition:border-color .3s, color .3s, padding-left .3s" class="x55">Cuadros y fotografías corporativas</li>
-          <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);background:var(--wash);padding:11px 0 11px 15px;border-left:2px solid var(--color-neutral-300);transition:border-color .3s, color .3s, padding-left .3s" class="x56">Placas de reconocimiento y premios</li>
-          <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);background:var(--wash);padding:11px 0 11px 15px;border-left:2px solid var(--color-neutral-300);transition:border-color .3s, color .3s, padding-left .3s" class="x57">Menús y señalética premium</li>
-          <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);background:var(--wash);padding:11px 0 11px 15px;border-left:2px solid var(--color-neutral-300);transition:border-color .3s, color .3s, padding-left .3s" class="x58">Terminación con canto pulido</li>
+        <ul style="list-style:none;margin:6px 0 0;padding:0;display:flex;flex-direction:column;gap:6px">
+          <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);padding:9px 14px;border-radius:var(--radius-sm);transition:background-color .25s ease, color .25s ease" class="x55">Cuadros y fotografías corporativas</li>
+          <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);padding:9px 14px;border-radius:var(--radius-sm);transition:background-color .25s ease, color .25s ease" class="x56">Placas de reconocimiento y premios</li>
+          <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);padding:9px 14px;border-radius:var(--radius-sm);transition:background-color .25s ease, color .25s ease" class="x57">Menús y señalética premium</li>
+          <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);padding:9px 14px;border-radius:var(--radius-sm);transition:background-color .25s ease, color .25s ease" class="x58">Terminación con canto pulido</li>
         </ul>
       </div>
     </div>
 
-    <div data-grid="cap" style="display:grid;grid-template-columns:repeat(6, minmax(0,1fr));gap:1px;background:var(--color-divider);margin-top:40px">
-      <article data-rv data-card style="opacity:0;transform:translateY(16px);transition:opacity .8s ease,transform .8s ease,background .4s ease;grid-column:span 2;background:var(--color-bg);padding:36px 34px 40px;display:flex;flex-direction:column;gap:22px" class="x10">
-        <div style="height:200px;border:6px solid var(--color-surface);outline:1px solid var(--color-divider)">
+    <div data-grid="cap" style="display:grid;grid-template-columns:repeat(6, minmax(0,1fr));gap:28px;margin-top:40px">
+      <article data-rv data-card style="opacity:0;transform:translateY(16px);transition:opacity .8s ease,transform .8s ease,background .4s ease,border-color .4s ease;grid-column:span 2;background:var(--color-bg);border:1px solid var(--color-divider);border-radius:var(--radius-md);padding:38px 32px 40px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:22px" class="x10">
+        <div style="height:200px;width:100%;border:6px solid var(--color-surface);outline:1px solid var(--color-divider)">
           <div class="slot" data-slot="bonta-cap-1"><span>Detalle de impresión UV sobre material rígido (madera, metal o acrílico) — plano cerrado del acabado.</span></div>
         </div>
-        <div>
+        <div style="display:flex;flex-direction:column;flex:1;width:100%">
           <h3 style="font-family:var(--font-ui);font-weight:600;font-size:22px;letter-spacing:-0.006em;margin:0 0 12px">Impresión sobre cualquier superficie</h3>
           <p style="margin:0 0 22px;font-size:15px;line-height:1.7;color:var(--color-neutral-700)">Traé el material — madera, metal, PVC, MDF, acrílico o vidrio — y lo imprimimos directo, en un solo pase, con la definición de una impresión UV profesional.</p>
-          <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:1px;background:var(--color-divider)">
-            <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);background:var(--color-bg);padding:11px 0 11px 15px;border-left:2px solid var(--color-neutral-300);transition:border-color .3s, color .3s, padding-left .3s" class="x11">Impresión sobre madera y metal</li>
-            <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);background:var(--color-bg);padding:11px 0 11px 15px;border-left:2px solid var(--color-neutral-300);transition:border-color .3s, color .3s, padding-left .3s" class="x12">PVC, MDF y acrílico</li>
-            <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);background:var(--color-bg);padding:11px 0 11px 15px;border-left:2px solid var(--color-neutral-300);transition:border-color .3s, color .3s, padding-left .3s" class="x13">Piezas rígidas a medida</li>
-            <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);background:var(--color-bg);padding:11px 0 11px 15px;border-left:2px solid var(--color-neutral-300);transition:border-color .3s, color .3s, padding-left .3s" class="x14">Laminados y acabados</li>
+          <ul style="list-style:none;margin-top:auto;padding:0;display:flex;flex-direction:column;gap:6px">
+            <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);padding:9px 14px;border-radius:var(--radius-sm);transition:background-color .25s ease, color .25s ease" class="x11">Impresión sobre madera y metal</li>
+            <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);padding:9px 14px;border-radius:var(--radius-sm);transition:background-color .25s ease, color .25s ease" class="x12">PVC, MDF y acrílico</li>
+            <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);padding:9px 14px;border-radius:var(--radius-sm);transition:background-color .25s ease, color .25s ease" class="x13">Piezas rígidas a medida</li>
+            <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);padding:9px 14px;border-radius:var(--radius-sm);transition:background-color .25s ease, color .25s ease" class="x14">Laminados y acabados</li>
           </ul>
         </div>
       </article>
 
-      <article data-rv data-card style="opacity:0;transform:translateY(16px);transition:opacity .8s ease,transform .8s ease,background .4s ease;transition-delay:.08s;grid-column:span 2;background:var(--color-bg);padding:36px 34px 40px;display:flex;flex-direction:column;gap:22px" class="x15">
-        <div style="height:200px;border:6px solid var(--color-surface);outline:1px solid var(--color-divider)">
+      <article data-rv data-card style="opacity:0;transform:translateY(16px);transition:opacity .8s ease,transform .8s ease,background .4s ease,border-color .4s ease;transition-delay:.08s;grid-column:span 2;background:var(--color-bg);border:1px solid var(--color-divider);border-radius:var(--radius-md);padding:38px 32px 40px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:22px" class="x15">
+        <div style="height:200px;width:100%;border:6px solid var(--color-surface);outline:1px solid var(--color-divider)">
           <div class="slot" data-slot="bonta-cap-2"><span>Banner o gráfica de gran formato ya colocada — algo que muestre la escala.</span></div>
         </div>
-        <div>
+        <div style="display:flex;flex-direction:column;flex:1;width:100%">
           <h3 style="font-family:var(--font-ui);font-weight:600;font-size:22px;letter-spacing:-0.006em;margin:0 0 12px">Plotter y vinilo</h3>
           <p style="margin:0 0 22px;font-size:15px;line-height:1.7;color:var(--color-neutral-700)">Impresión en rollo y corte de vinilo de precisión, para todo lo que se mide en metros.</p>
-          <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:1px;background:var(--color-divider)">
-            <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);background:var(--color-bg);padding:11px 0 11px 15px;border-left:2px solid var(--color-neutral-300);transition:border-color .3s, color .3s, padding-left .3s" class="x16">Carteles y banners</li>
-            <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);background:var(--color-bg);padding:11px 0 11px 15px;border-left:2px solid var(--color-neutral-300);transition:border-color .3s, color .3s, padding-left .3s" class="x17">Vinilo de corte y autoadhesivo</li>
-            <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);background:var(--color-bg);padding:11px 0 11px 15px;border-left:2px solid var(--color-neutral-300);transition:border-color .3s, color .3s, padding-left .3s" class="x18">Papel y tela</li>
-            <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);background:var(--color-bg);padding:11px 0 11px 15px;border-left:2px solid var(--color-neutral-300);transition:border-color .3s, color .3s, padding-left .3s" class="x19">Gráfica continua sin empalmes</li>
+          <ul style="list-style:none;margin-top:auto;padding:0;display:flex;flex-direction:column;gap:6px">
+            <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);padding:9px 14px;border-radius:var(--radius-sm);transition:background-color .25s ease, color .25s ease" class="x16">Carteles y banners</li>
+            <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);padding:9px 14px;border-radius:var(--radius-sm);transition:background-color .25s ease, color .25s ease" class="x17">Vinilo de corte y autoadhesivo</li>
+            <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);padding:9px 14px;border-radius:var(--radius-sm);transition:background-color .25s ease, color .25s ease" class="x18">Papel y tela</li>
+            <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);padding:9px 14px;border-radius:var(--radius-sm);transition:background-color .25s ease, color .25s ease" class="x19">Gráfica continua sin empalmes</li>
           </ul>
         </div>
       </article>
 
-      <article data-rv data-card style="opacity:0;transform:translateY(16px);transition:opacity .8s ease,transform .8s ease,background .4s ease;transition-delay:.14s;grid-column:span 2;background:var(--color-bg);padding:36px 34px 40px;display:flex;flex-direction:column;gap:22px" class="x20">
-        <div style="height:200px;border:6px solid var(--color-surface);outline:1px solid var(--color-divider)">
+      <article data-rv data-card style="opacity:0;transform:translateY(16px);transition:opacity .8s ease,transform .8s ease,background .4s ease,border-color .4s ease;transition-delay:.14s;grid-column:span 2;background:var(--color-bg);border:1px solid var(--color-divider);border-radius:var(--radius-md);padding:38px 32px 40px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:22px" class="x20">
+        <div style="height:200px;width:100%;border:6px solid var(--color-surface);outline:1px solid var(--color-divider)">
           <div class="slot" data-slot="bonta-cap-3"><span>Vidriera terminada o logo corpóreo iluminado de noche — fachada de local real.</span></div>
         </div>
-        <div>
+        <div style="display:flex;flex-direction:column;flex:1;width:100%">
           <h3 style="font-family:var(--font-ui);font-weight:600;font-size:22px;letter-spacing:-0.006em;margin:0 0 12px">Vidrieras y señalética</h3>
           <p style="margin:0 0 22px;font-size:15px;line-height:1.7;color:var(--color-neutral-700)">Vinilos de corte, letras corpóreas, cartelería iluminada y señalética para locales y fachadas.</p>
-          <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:1px;background:var(--color-divider)">
-            <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);background:var(--color-bg);padding:11px 0 11px 15px;border-left:2px solid var(--color-neutral-300);transition:border-color .3s, color .3s, padding-left .3s" class="x21">Vidrieras y vinilos de corte</li>
-            <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);background:var(--color-bg);padding:11px 0 11px 15px;border-left:2px solid var(--color-neutral-300);transition:border-color .3s, color .3s, padding-left .3s" class="x22">Letras corpóreas y logos iluminados</li>
-            <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);background:var(--color-bg);padding:11px 0 11px 15px;border-left:2px solid var(--color-neutral-300);transition:border-color .3s, color .3s, padding-left .3s" class="x23">Cartelería backlight</li>
-            <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);background:var(--color-bg);padding:11px 0 11px 15px;border-left:2px solid var(--color-neutral-300);transition:border-color .3s, color .3s, padding-left .3s" class="x24">Señalética corporativa</li>
+          <ul style="list-style:none;margin-top:auto;padding:0;display:flex;flex-direction:column;gap:6px">
+            <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);padding:9px 14px;border-radius:var(--radius-sm);transition:background-color .25s ease, color .25s ease" class="x21">Vidrieras y vinilos de corte</li>
+            <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);padding:9px 14px;border-radius:var(--radius-sm);transition:background-color .25s ease, color .25s ease" class="x22">Letras corpóreas y logos iluminados</li>
+            <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);padding:9px 14px;border-radius:var(--radius-sm);transition:background-color .25s ease, color .25s ease" class="x23">Cartelería backlight</li>
+            <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);padding:9px 14px;border-radius:var(--radius-sm);transition:background-color .25s ease, color .25s ease" class="x24">Señalética corporativa</li>
           </ul>
         </div>
       </article>
 
-      <article data-rv data-card style="opacity:0;transform:translateY(16px);transition:opacity .8s ease,transform .8s ease,background .4s ease;grid-column:span 3;background:var(--color-bg);padding:36px 34px 40px;display:flex;flex-direction:column;gap:22px" class="x25">
-        <div style="height:260px;border:6px solid var(--color-surface);outline:1px solid var(--color-divider)">
+      <article data-rv data-card style="opacity:0;transform:translateY(16px);transition:opacity .8s ease,transform .8s ease,background .4s ease,border-color .4s ease;grid-column:span 3;background:var(--color-bg);border:1px solid var(--color-divider);border-radius:var(--radius-md);padding:38px 32px 40px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:22px" class="x25">
+        <div style="height:260px;width:100%;border:6px solid var(--color-surface);outline:1px solid var(--color-divider)">
           <div class="slot" data-slot="bonta-cap-4"><span>Stand de feria o local ambientado, foto amplia — estructura + gráfica montada.</span></div>
         </div>
-        <div data-split="cap4" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px">
-          <div>
-            <h3 style="font-family:var(--font-ui);font-weight:600;font-size:22px;letter-spacing:-0.006em;margin:0 0 12px">Stands, eventos y locales</h3>
-            <p style="margin:0;font-size:15px;line-height:1.7;color:var(--color-neutral-700)">Estructura, gráfica aplicada y montaje como un solo proceso — de la carpintería a la instalación en el lugar.</p>
-          </div>
-          <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:1px;background:var(--color-divider)">
-            <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);background:var(--color-bg);padding:11px 0 11px 15px;border-left:2px solid var(--color-neutral-300);transition:border-color .3s, color .3s, padding-left .3s" class="x26">Stands para ferias y eventos</li>
-            <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);background:var(--color-bg);padding:11px 0 11px 15px;border-left:2px solid var(--color-neutral-300);transition:border-color .3s, color .3s, padding-left .3s" class="x27">Ambientación de locales</li>
-            <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);background:var(--color-bg);padding:11px 0 11px 15px;border-left:2px solid var(--color-neutral-300);transition:border-color .3s, color .3s, padding-left .3s" class="x28">Carpintería y armado</li>
-            <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);background:var(--color-bg);padding:11px 0 11px 15px;border-left:2px solid var(--color-neutral-300);transition:border-color .3s, color .3s, padding-left .3s" class="x29">Instalación en sitio</li>
+        <div style="display:flex;flex-direction:column;flex:1;width:100%">
+          <h3 style="font-family:var(--font-ui);font-weight:600;font-size:22px;letter-spacing:-0.006em;margin:0 0 12px">Stands, eventos y locales</h3>
+          <p style="margin:0 0 22px;font-size:15px;line-height:1.7;color:var(--color-neutral-700)">Estructura, gráfica aplicada y montaje como un solo proceso — de la carpintería a la instalación en el lugar.</p>
+          <ul style="list-style:none;margin-top:auto;padding:0;display:flex;flex-direction:column;gap:6px">
+            <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);padding:9px 14px;border-radius:var(--radius-sm);transition:background-color .25s ease, color .25s ease" class="x26">Stands para ferias y eventos</li>
+            <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);padding:9px 14px;border-radius:var(--radius-sm);transition:background-color .25s ease, color .25s ease" class="x27">Ambientación de locales</li>
+            <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);padding:9px 14px;border-radius:var(--radius-sm);transition:background-color .25s ease, color .25s ease" class="x28">Carpintería y armado</li>
+            <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);padding:9px 14px;border-radius:var(--radius-sm);transition:background-color .25s ease, color .25s ease" class="x29">Instalación en sitio</li>
           </ul>
         </div>
       </article>
 
-      <article data-rv data-card style="opacity:0;transform:translateY(16px);transition:opacity .8s ease,transform .8s ease,background .4s ease;transition-delay:.08s;grid-column:span 3;background:var(--color-bg);padding:36px 34px 40px;display:flex;flex-direction:column;gap:22px" class="x30">
-        <div style="height:260px;border:6px solid var(--color-surface);outline:1px solid var(--color-divider)">
+      <article data-rv data-card style="opacity:0;transform:translateY(16px);transition:opacity .8s ease,transform .8s ease,background .4s ease,border-color .4s ease;transition-delay:.08s;grid-column:span 3;background:var(--color-bg);border:1px solid var(--color-divider);border-radius:var(--radius-md);padding:38px 32px 40px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:22px" class="x30">
+        <div style="height:260px;width:100%;border:6px solid var(--color-surface);outline:1px solid var(--color-divider)">
           <div class="slot" data-slot="bonta-cap-5"><span>Piezas de acrílico premium: cuadro bajo acrílico, trofeo o pieza plegada, sobre fondo neutro.</span></div>
         </div>
-        <div>
+        <div style="display:flex;flex-direction:column;flex:1;width:100%">
           <h3 style="font-family:var(--font-ui);font-weight:600;font-size:22px;letter-spacing:-0.006em;margin:0 0 12px">Piezas a medida</h3>
           <p style="margin:0 0 22px;font-size:15px;line-height:1.7;color:var(--color-neutral-700)">Acrílico premium, prototipado 3D y piezas de producción chica para cuando el estándar no alcanza.</p>
-          <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:1px;background:var(--color-divider)">
-            <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);background:var(--color-bg);padding:11px 0 11px 15px;border-left:2px solid var(--color-neutral-300);transition:border-color .3s, color .3s, padding-left .3s" class="x31">Placas y letreros institucionales</li>
-            <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);background:var(--color-bg);padding:11px 0 11px 15px;border-left:2px solid var(--color-neutral-300);transition:border-color .3s, color .3s, padding-left .3s" class="x32">Acrílico plegado y trofeos</li>
-            <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);background:var(--color-bg);padding:11px 0 11px 15px;border-left:2px solid var(--color-neutral-300);transition:border-color .3s, color .3s, padding-left .3s" class="x33">Prototipado e impresión 3D</li>
-            <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);background:var(--color-bg);padding:11px 0 11px 15px;border-left:2px solid var(--color-neutral-300);transition:border-color .3s, color .3s, padding-left .3s" class="x34">Regalos empresariales</li>
+          <ul style="list-style:none;margin-top:auto;padding:0;display:flex;flex-direction:column;gap:6px">
+            <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);padding:9px 14px;border-radius:var(--radius-sm);transition:background-color .25s ease, color .25s ease" class="x31">Placas y letreros institucionales</li>
+            <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);padding:9px 14px;border-radius:var(--radius-sm);transition:background-color .25s ease, color .25s ease" class="x32">Acrílico plegado y trofeos</li>
+            <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);padding:9px 14px;border-radius:var(--radius-sm);transition:background-color .25s ease, color .25s ease" class="x33">Prototipado e impresión 3D</li>
+            <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);padding:9px 14px;border-radius:var(--radius-sm);transition:background-color .25s ease, color .25s ease" class="x34">Regalos empresariales</li>
           </ul>
         </div>
       </article>
@@ -208,7 +204,7 @@
   <section aria-label="Proyectos a medida" style="margin-top:102px;background:var(--wash);border-top:1px solid var(--wash-line);border-bottom:1px solid var(--wash-line)">
     <div data-pad style="max-width:1240px;margin:0 auto;padding:78px 40px 80px">
       <div data-split="remate" data-rv style="opacity:0;transform:translateY(14px);transition:opacity .8s ease,transform .8s ease;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:64px;align-items:end">
-        <h2 style="font-family:var(--font-heading);font-weight:400;font-size:clamp(32px,3.5vw,50px);line-height:1.1;letter-spacing:-0.018em;margin:0;max-width:26ch">Y si lo que necesitás no está en esta lista, <span style="font-style:normal;font-weight:600;color:var(--brand)">también lo podemos hacer.</span></h2>
+        <h2 style="font-family:var(--font-ui);font-weight:500;font-size:clamp(32px,3.5vw,50px);line-height:1.1;letter-spacing:-0.02em;margin:0;max-width:26ch">Y si lo que necesitás no está en esta lista, <span style="font-weight:700;color:var(--brand)">también lo podemos hacer.</span></h2>
         <div>
           <p style="margin:0 0 30px;font-size:16px;line-height:1.72;color:var(--color-neutral-700);max-width:40ch">Los proyectos especiales son parte del trabajo de todos los días. Contanos la idea y vemos juntos cómo producirla.</p>
           <a href="#contacto" style="display:inline-flex;align-items:center;gap:10px;font-family:var(--font-ui);font-size:12.5px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-bg);background:var(--brand);border:1px solid var(--brand);border-radius:var(--radius-md);padding:15px 28px;white-space:nowrap;transition:background .25s" class="x35">Hablemos de tu proyecto →</a>
@@ -223,10 +219,10 @@
       <p style="margin:0;font-family:var(--font-ui);font-size:11px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold)">Marcas que eligen Bonta</p>
     </div>
     <div data-marquee style="display:flex;width:max-content;animation:bonta-marquee 90s linear infinite;will-change:transform">
-      <div style="display:flex;gap:88px;padding-right:88px;font-family:var(--font-heading);font-size:38px;font-weight:400;color:color-mix(in srgb, var(--color-bg) 92%, transparent);white-space:nowrap">
+      <div style="display:flex;gap:88px;padding-right:88px;font-family:var(--font-ui);font-size:30px;font-weight:500;letter-spacing:-0.006em;color:color-mix(in srgb, var(--color-bg) 92%, transparent);white-space:nowrap">
         <span>Lacoste</span><span>Cristóbal Colón</span><span>Molca × Carrefour</span><span>Campaña Colapinto</span><span>Subway</span><span>Banco Galicia</span><span>Victoria's Secret</span><span>Cardón</span><span>Farmaplus</span><span>Sinteplast</span>
       </div>
-      <div style="display:flex;gap:88px;padding-right:88px;font-family:var(--font-heading);font-size:38px;font-weight:400;color:color-mix(in srgb, var(--color-bg) 92%, transparent);white-space:nowrap" aria-hidden="true">
+      <div style="display:flex;gap:88px;padding-right:88px;font-family:var(--font-ui);font-size:30px;font-weight:500;letter-spacing:-0.006em;color:color-mix(in srgb, var(--color-bg) 92%, transparent);white-space:nowrap" aria-hidden="true">
         <span>Lacoste</span><span>Cristóbal Colón</span><span>Molca × Carrefour</span><span>Campaña Colapinto</span><span>Subway</span><span>Banco Galicia</span><span>Victoria's Secret</span><span>Cardón</span><span>Farmaplus</span><span>Sinteplast</span>
       </div>
     </div>
@@ -235,12 +231,8 @@
   <section id="proceso" data-pad style="max-width:1240px;margin:0 auto;padding:120px 40px 0">
     <div data-split="head" data-rv style="opacity:0;transform:translateY(14px);transition:opacity .8s ease,transform .8s ease;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px;align-items:end;padding-bottom:44px">
       <div>
-        <div aria-hidden="true" style="display:flex;align-items:center;gap:10px;margin-bottom:22px">
-          <span style="width:38px;height:1px;background:var(--gold);display:block"></span>
-          <span style="width:5px;height:5px;background:var(--gold);display:block;transform:rotate(45deg)"></span>
-        </div>
-        <p style="display:flex;align-items:center;gap:11px;font-family:var(--font-ui);font-size:12px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--brand);margin:0 0 20px"><img src="assets/img/logo-mark.png" alt="" width="15" height="15" style="display:block;width:15px;height:15px;opacity:0.9"><span style="color:var(--gold);font-size:15px">02</span> — Proceso</p>
-        <h2 style="font-family:var(--font-heading);font-weight:400;font-size:clamp(36px,3.8vw,54px);line-height:1.04;letter-spacing:-0.018em;margin:0;max-width:18ch">De la idea al montaje, en cuatro pasos</h2>
+        <p style="font-family:var(--font-ui);font-size:15px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--brand);margin:0 0 22px">Proceso</p>
+        <h2 style="font-family:var(--font-ui);font-weight:500;font-size:clamp(36px,3.8vw,54px);line-height:1.04;letter-spacing:-0.02em;margin:0;max-width:18ch">De la idea al montaje, en cuatro pasos</h2>
       </div>
       <p style="margin:0;font-size:16px;line-height:1.72;color:var(--color-neutral-700);max-width:44ch">Con archivo listo o con una idea a medio armar — te acompañamos desde donde estés.</p>
     </div>
@@ -274,12 +266,8 @@
     <div data-pad style="position:relative;max-width:1240px;margin:0 auto;padding:96px 40px 100px">
       <div data-split="why" style="display:grid;grid-template-columns:minmax(0,0.85fr) minmax(0,1.15fr);gap:80px;align-items:start">
         <div data-rv data-whysticky style="opacity:0;transform:translateY(14px);transition:opacity .8s ease,transform .8s ease;position:sticky;top:120px">
-          <div aria-hidden="true" style="display:flex;align-items:center;gap:10px;margin-bottom:22px">
-            <span style="width:38px;height:1px;background:var(--gold);display:block"></span>
-            <span style="width:5px;height:5px;background:var(--gold);display:block;transform:rotate(45deg)"></span>
-          </div>
-          <p style="display:flex;align-items:center;gap:11px;font-family:var(--font-ui);font-size:12px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--brand-light);margin:0 0 20px"><img src="assets/img/logo-mark-blanco.png" alt="" width="15" height="15" style="display:block;width:15px;height:15px;opacity:0.9"><span style="color:var(--gold);font-size:15px">03</span> — Por qué Bonta</p>
-          <h2 style="font-family:var(--font-heading);font-weight:400;font-size:clamp(34px,3.5vw,50px);line-height:1.06;letter-spacing:-0.018em;margin:0;max-width:14ch;color:var(--color-bg)">Más de 40 años haciendo que las cosas se vean bien hechas.</h2>
+          <p style="font-family:var(--font-ui);font-size:15px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--brand-light);margin:0 0 22px">Por qué Bonta</p>
+          <h2 style="font-family:var(--font-ui);font-weight:500;font-size:clamp(42px,4.6vw,66px);line-height:1.02;letter-spacing:-0.022em;margin:0;max-width:12ch;color:var(--color-bg)">Más de 40 años haciendo que las cosas se vean bien hechas.</h2>
         </div>
         <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column">
           <li data-rv style="opacity:0;transform:translateY(16px);transition:opacity .8s ease,transform .8s ease;display:grid;grid-template-columns:56px 1fr;gap:24px;padding:0 0 34px">
@@ -318,12 +306,8 @@
   <section id="trabajos" data-pad style="max-width:1240px;margin:0 auto;padding:120px 40px 0">
     <div data-split="head" data-rv style="opacity:0;transform:translateY(14px);transition:opacity .8s ease,transform .8s ease;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px;align-items:end;padding-bottom:44px;border-bottom:1px solid var(--color-divider)">
       <div>
-        <div aria-hidden="true" style="display:flex;align-items:center;gap:10px;margin-bottom:22px">
-          <span style="width:38px;height:1px;background:var(--gold);display:block"></span>
-          <span style="width:5px;height:5px;background:var(--gold);display:block;transform:rotate(45deg)"></span>
-        </div>
-        <p style="display:flex;align-items:center;gap:11px;font-family:var(--font-ui);font-size:12px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--brand);margin:0 0 20px"><img src="assets/img/logo-mark.png" alt="" width="15" height="15" style="display:block;width:15px;height:15px;opacity:0.9"><span style="color:var(--gold);font-size:15px">04</span> — Trabajos</p>
-        <h2 style="font-family:var(--font-heading);font-weight:400;font-size:clamp(36px,3.8vw,54px);line-height:1.04;letter-spacing:-0.018em;margin:0;max-width:18ch">Piezas terminadas, en su lugar</h2>
+        <p style="font-family:var(--font-ui);font-size:15px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--brand);margin:0 0 22px">Trabajos</p>
+        <h2 style="font-family:var(--font-ui);font-weight:500;font-size:clamp(36px,3.8vw,54px);line-height:1.04;letter-spacing:-0.02em;margin:0;max-width:18ch">Piezas terminadas, en su lugar</h2>
       </div>
       <p style="margin:0;font-size:16px;line-height:1.72;color:var(--color-neutral-700);max-width:44ch">Cada trabajo con su foto y su ficha: qué se hizo, con qué técnica y dónde está instalado.</p>
     </div>
@@ -390,8 +374,8 @@
     <div data-pad style="max-width:1240px;margin:0 auto;padding:66px 40px 68px">
       <div data-split="ficha" data-rv style="opacity:0;transform:translateY(14px);transition:opacity .8s ease,transform .8s ease;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:56px;align-items:center">
         <div>
-          <p style="display:flex;align-items:center;gap:11px;font-family:var(--font-ui);font-size:12px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--brand);margin:0 0 18px"><img src="assets/img/logo-mark.png" alt="" width="15" height="15" style="display:block;width:15px;height:15px;opacity:0.9"><span style="color:var(--gold);font-size:15px">05</span> — Ficha técnica</p>
-          <h2 style="font-family:var(--font-heading);font-weight:400;font-size:clamp(32px,3.2vw,46px);line-height:1.06;letter-spacing:-0.018em;margin:0;max-width:20ch">Equipamiento y capacidades</h2>
+          <p style="font-family:var(--font-ui);font-size:15px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--brand);margin:0 0 18px">Ficha técnica</p>
+          <h2 style="font-family:var(--font-ui);font-weight:500;font-size:clamp(32px,3.2vw,46px);line-height:1.06;letter-spacing:-0.02em;margin:0;max-width:20ch">Equipamiento y capacidades</h2>
         </div>
         <div>
           <p style="margin:0 0 26px;font-size:16px;line-height:1.72;color:var(--color-neutral-700);max-width:40ch">Máquinas, materiales y medidas exactas, en una página aparte para quien necesita el dato antes de mandar el archivo.</p>
@@ -431,9 +415,7 @@
 
   <div data-pad style="max-width:1240px;margin:108px auto 0;padding:0 40px;display:flex;align-items:center;gap:26px">
     <span style="height:1px;flex:1;background:var(--color-divider);display:block"></span>
-    <span style="width:5px;height:5px;background:var(--gold);display:block;transform:rotate(45deg)"></span>
     <img src="assets/img/logo-mark.png" alt="" width="26" height="26" style="display:block;width:26px;height:26px;opacity:0.75">
-    <span style="width:5px;height:5px;background:var(--gold);display:block;transform:rotate(45deg)"></span>
     <span style="height:1px;flex:1;background:var(--color-divider);display:block"></span>
   </div>
 
@@ -475,6 +457,6 @@
     <img src="assets/img/whatsapp.png" alt="" width="60" height="60" style="display:block;width:60px;height:60px;border-radius:50%">
   </a>
 </div>
-<script src="assets/js/site.js?v=2"></script>
+<script src="assets/js/site.js?v=3"></script>
 </body>
 </html>
