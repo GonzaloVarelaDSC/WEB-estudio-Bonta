@@ -23,63 +23,38 @@
     onScroll();
   }
 
-  /* cifras: tambor que gira y frena, se repite al volver a entrar en pantalla */
-  var drums = [];
-  $$('[data-roll]').forEach(function (el, idx) {
-    var txt = el.getAttribute('data-roll');
-    el.textContent = '';
-    el.style.display = 'inline-flex';
-    var strips = [];
-    txt.split('').forEach(function (ch, i) {
-      var win = document.createElement('span');
-      win.style.cssText = 'display:inline-block;height:1em;line-height:1;overflow:hidden';
-      var strip = document.createElement('span');
-      strip.style.cssText = 'display:block;will-change:transform';
-      var loops = 2 + i + (idx % 2), l, d, s;
-      for (l = 0; l < loops; l++) for (d = 0; d < 10; d++) {
-        s = document.createElement('span');
-        s.style.cssText = 'display:block;height:1em;line-height:1';
-        s.textContent = String(d);
-        strip.appendChild(s);
-      }
-      var fin = document.createElement('span');
-      fin.style.cssText = 'display:block;height:1em;line-height:1';
-      fin.textContent = ch;
-      strip.appendChild(fin);
-      win.appendChild(strip);
-      el.appendChild(win);
-      strips.push({ strip: strip, travel: loops * 10, i: i });
-    });
-    drums.push({ el: el, strips: strips });
-  });
-  var spinDrum = function (d) {
-    d.strips.forEach(function (o) {
-      o.strip.style.transition = 'none';
-      o.strip.style.transform = 'translateY(0)';
-      void o.strip.offsetHeight;
-      requestAnimationFrame(function () {
-        o.strip.style.transition = 'transform ' + (2.6 + o.i * 0.45) + 's cubic-bezier(.08,.72,.13,1)';
-        o.strip.style.transform = 'translateY(-' + o.travel + 'em)';
-      });
-    });
+  /* cifras: cuenta real de un valor a otro (ascendente o descendente), se repite al volver a entrar en pantalla */
+  var counters = $$('[data-count]');
+  var easeOutCubic = function (t) { return 1 - Math.pow(1 - t, 3); };
+  var runCounters = {};
+  var animateCounter = function (el) {
+    var from = parseInt(el.getAttribute('data-count-from'), 10);
+    var to = parseInt(el.getAttribute('data-count-to'), 10);
+    var delay = parseInt(el.getAttribute('data-count-delay'), 10) || 0;
+    var duration = 1900;
+    clearTimeout(runCounters[el._cid]);
+    runCounters[el._cid] = setTimeout(function () {
+      var start = null;
+      var frame = function (ts) {
+        if (start === null) start = ts;
+        var p = Math.min((ts - start) / duration, 1);
+        el.textContent = String(Math.round(from + (to - from) * easeOutCubic(p)));
+        if (p < 1) requestAnimationFrame(frame); else el.textContent = String(to);
+      };
+      requestAnimationFrame(frame);
+    }, delay);
   };
-  var restDrum = function (d) {
-    d.strips.forEach(function (o) {
-      o.strip.style.transition = 'none';
-      o.strip.style.transform = 'translateY(-' + o.travel + 'em)';
-    });
-  };
+  var resetCounter = function (el) { el.textContent = el.getAttribute('data-count-from'); };
+  counters.forEach(function (el, idx) { el._cid = idx; resetCounter(el); });
   if (reduce || !('IntersectionObserver' in window)) {
-    drums.forEach(restDrum);
+    counters.forEach(function (el) { el.textContent = el.getAttribute('data-count-to'); });
   } else {
-    var drumIO = new IntersectionObserver(function (es) {
+    var countIO = new IntersectionObserver(function (es) {
       es.forEach(function (e) {
-        var d = drums.filter(function (x) { return x.el === e.target; })[0];
-        if (!d) return;
-        if (e.isIntersecting) spinDrum(d); else restDrum(d);
+        if (e.isIntersecting) animateCounter(e.target); else resetCounter(e.target);
       });
     }, { threshold: 0.6 });
-    drums.forEach(function (d) { drumIO.observe(d.el); });
+    counters.forEach(function (el) { countIO.observe(el); });
   }
 
   /* apariciones al scrollear */
