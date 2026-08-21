@@ -4,7 +4,7 @@
     --brand: #13077a;
     --brand-soft: color-mix(in srgb, #13077a 7%, transparent);
     --brand-light: color-mix(in srgb, #13077a 34%, #f3f2f2);
-    --font-ui: "Archivo", system-ui, sans-serif;
+    --font-ui: "Space Grotesk", system-ui, sans-serif;
     --ink: #14113d;
     --paper-2: color-mix(in srgb, var(--color-surface) 62%, var(--color-bg));
     --gold: #b68235;
