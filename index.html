@@ -8,7 +8,7 @@
 <link rel="icon" href="assets/img/logo-mark.png">
 <link rel="stylesheet" href="assets/css/tokens.css">
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css">
+<link rel="stylesheet" href="assets/css/site.css?v=2">
 </head>
 <body>
 <div style="background:var(--color-bg);color:var(--color-text);font-family:var(--font-body);min-height:100vh">
@@ -76,37 +76,58 @@
   <section data-pad style="max-width:1240px;margin:0 auto;padding:0 40px">
     <div data-grid="3s" style="display:grid;grid-template-columns:repeat(3, minmax(0,1fr));border-bottom:1px solid var(--color-divider)">
       <div data-rv style="opacity:0;transform:translateY(14px);transition:opacity .8s ease,transform .8s ease;padding:42px 34px 40px 0">
-        <div style="font-family:var(--font-ui);font-size:40px;font-weight:500;line-height:1;letter-spacing:-0.02em;font-feature-settings:'tnum';color:var(--brand);margin-bottom:14px">+<span data-roll="40">40</span> <span style="font-size:19px;font-weight:500;color:var(--color-neutral-700);letter-spacing:0.04em">AÑOS</span></div>
+        <div style="font-family:var(--font-ui);font-size:40px;font-weight:500;line-height:1;letter-spacing:-0.02em;font-feature-settings:'tnum';color:var(--brand);margin-bottom:14px">+<span data-count data-count-from="1" data-count-to="40">1</span> <span style="font-size:19px;font-weight:500;color:var(--color-neutral-700);letter-spacing:0.04em">AÑOS</span></div>
         <p style="margin:0;font-size:14.5px;line-height:1.66;color:var(--color-neutral-700)">Cuatro décadas de oficio en impresión y fabricación gráfica.</p>
       </div>
       <div data-rv style="opacity:0;transform:translateY(14px);transition:opacity .8s ease,transform .8s ease;transition-delay:.08s;padding:42px 34px 40px;border-left:1px solid var(--color-divider)">
-        <div style="font-family:var(--font-ui);font-size:40px;font-weight:500;line-height:1;letter-spacing:-0.02em;font-feature-settings:'tnum';color:var(--brand);margin-bottom:14px"><span data-roll="24">24</span>/<span data-roll="48" data-roll-delay="140">48</span> <span style="font-size:19px;font-weight:500;color:var(--color-neutral-700);letter-spacing:0.04em">HS</span></div>
+        <div style="font-family:var(--font-ui);font-size:40px;font-weight:500;line-height:1;letter-spacing:-0.02em;font-feature-settings:'tnum';color:var(--brand);margin-bottom:14px"><span data-count data-count-from="99" data-count-to="24">99</span>/<span data-count data-count-from="99" data-count-to="48" data-count-delay="160">99</span> <span style="font-size:19px;font-weight:500;color:var(--color-neutral-700);letter-spacing:0.04em">HS</span></div>
         <p style="margin:0;font-size:14.5px;line-height:1.66;color:var(--color-neutral-700)">Respuesta a tu consulta por WhatsApp o mail, en horario hábil.</p>
       </div>
       <div data-rv style="opacity:0;transform:translateY(14px);transition:opacity .8s ease,transform .8s ease;transition-delay:.16s;padding:42px 0 40px 34px;border-left:1px solid var(--color-divider)">
-        <div style="font-family:var(--font-ui);font-size:40px;font-weight:500;line-height:1;letter-spacing:-0.02em;font-feature-settings:'tnum';color:var(--brand);margin-bottom:14px"><span data-roll="1">1</span> <span style="font-size:19px;font-weight:500;color:var(--color-neutral-700);letter-spacing:0.04em">SOLO PROVEEDOR</span></div>
-        <p style="margin:0;font-size:14.5px;line-height:1.66;color:var(--color-neutral-700)">Diseño, materiales, técnicas, medidas y montaje.</p>
+        <div style="font-family:var(--font-ui);font-size:40px;font-weight:500;line-height:1;letter-spacing:-0.02em;font-feature-settings:'tnum';color:var(--brand);margin-bottom:14px"><span data-count data-count-from="0" data-count-to="360">0</span>° <span style="font-size:19px;font-weight:500;color:var(--color-neutral-700);letter-spacing:0.04em">DE SOLUCIÓN</span></div>
+        <p style="margin:0;font-size:14.5px;line-height:1.66;color:var(--color-neutral-700)">Nos contás el problema — diseño, materiales, técnica y montaje los resolvemos nosotros.</p>
       </div>
     </div>
   </section>
 
-  <section id="capacidades" data-pad style="max-width:1240px;margin:0 auto;padding:106px 40px 0">
+  <section id="capacidades" data-pad style="max-width:1240px;margin:0 auto;padding:132px 40px 0">
     <div data-split="head" data-rv style="opacity:0;transform:translateY(14px);transition:opacity .8s ease,transform .8s ease;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px;align-items:end;padding-bottom:44px;border-bottom:1px solid var(--color-divider)">
       <div>
-        <p style="display:flex;align-items:center;gap:11px;font-family:var(--font-ui);font-size:11px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:var(--brand);margin:0 0 20px"><img src="assets/img/logo-mark.png" alt="" width="15" height="15" style="display:block;width:15px;height:15px;opacity:0.9"><span style="color:var(--gold)">01</span> — Capacidades</p>
-        <h2 style="font-family:var(--font-heading);font-weight:400;font-size:clamp(36px,3.8vw,54px);line-height:1.04;letter-spacing:-0.018em;margin:0;max-width:20ch">Imprimimos y fabricamos lo que tu marca necesite</h2>
+        <div aria-hidden="true" style="display:flex;align-items:center;gap:10px;margin-bottom:22px">
+          <span style="width:38px;height:1px;background:var(--gold);display:block"></span>
+          <span style="width:5px;height:5px;background:var(--gold);display:block;transform:rotate(45deg)"></span>
+        </div>
+        <p style="display:flex;align-items:center;gap:11px;font-family:var(--font-ui);font-size:12px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--brand);margin:0 0 20px"><img src="assets/img/logo-mark.png" alt="" width="15" height="15" style="display:block;width:15px;height:15px;opacity:0.9"><span style="color:var(--gold);font-size:15px">01</span> — Capacidades</p>
+        <h2 style="font-family:var(--font-heading);font-weight:400;font-size:clamp(38px,4.1vw,58px);line-height:1.04;letter-spacing:-0.018em;margin:0;max-width:20ch">Imprimimos y fabricamos lo que tu marca necesite</h2>
       </div>
       <p style="margin:0;font-size:16px;line-height:1.72;color:var(--color-neutral-700);max-width:44ch">Elegí la categoría más parecida a lo que tenés en mente — el resto lo resolvemos juntos.</p>
     </div>
 
-    <div data-grid="cap" style="display:grid;grid-template-columns:repeat(6, minmax(0,1fr));gap:1px;background:var(--color-divider)">
+    <div data-rv data-card data-split="feature-cap" style="opacity:0;transform:translateY(16px);transition:opacity .8s ease,transform .8s ease;margin-top:44px;background:var(--wash);border:1px solid var(--wash-line);border-radius:var(--radius-lg);padding:8px;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:0;overflow:hidden" class="x54">
+      <div style="height:100%;min-height:320px">
+        <div class="slot" data-slot="bonta-cap-6" style="height:100%"><span>Cuadro o placa bajo acrílico — pieza colgada, con luz que muestre la profundidad y el canto pulido.</span></div>
+      </div>
+      <div style="padding:38px 40px 40px;display:flex;flex-direction:column;justify-content:center;gap:20px">
+        <span style="display:inline-flex;align-items:center;gap:8px;align-self:flex-start;font-family:var(--font-ui);font-size:10.5px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--color-bg);background:var(--brand);border-radius:999px;padding:7px 14px 7px 12px"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 14.6 9h7.4l-6 4.4 2.3 7.1L12 16 5.7 20.5 8 13.4 2 9h7.4Z"/></svg>Especialidad Bonta</span>
+        <h3 style="font-family:var(--font-heading);font-weight:600;font-size:34px;letter-spacing:-0.014em;margin:0">Impresión bajo acrílico</h3>
+        <p style="margin:0;font-size:15.5px;line-height:1.75;color:var(--color-neutral-800);max-width:46ch">La terminación premium para lo que tiene que verse impecable: la imagen queda protegida bajo una lámina de acrílico transparente, con una profundidad y un brillo que ningún otro método iguala. Es el trabajo que más nos define.</p>
+        <ul style="list-style:none;margin:6px 0 0;padding:0;display:flex;flex-direction:column;gap:1px;background:var(--wash-line)">
+          <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);background:var(--wash);padding:11px 0 11px 15px;border-left:2px solid var(--color-neutral-300);transition:border-color .3s, color .3s, padding-left .3s" class="x55">Cuadros y fotografías corporativas</li>
+          <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);background:var(--wash);padding:11px 0 11px 15px;border-left:2px solid var(--color-neutral-300);transition:border-color .3s, color .3s, padding-left .3s" class="x56">Placas de reconocimiento y premios</li>
+          <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);background:var(--wash);padding:11px 0 11px 15px;border-left:2px solid var(--color-neutral-300);transition:border-color .3s, color .3s, padding-left .3s" class="x57">Menús y señalética premium</li>
+          <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);background:var(--wash);padding:11px 0 11px 15px;border-left:2px solid var(--color-neutral-300);transition:border-color .3s, color .3s, padding-left .3s" class="x58">Terminación con canto pulido</li>
+        </ul>
+      </div>
+    </div>
+
+    <div data-grid="cap" style="display:grid;grid-template-columns:repeat(6, minmax(0,1fr));gap:1px;background:var(--color-divider);margin-top:40px">
       <article data-rv data-card style="opacity:0;transform:translateY(16px);transition:opacity .8s ease,transform .8s ease,background .4s ease;grid-column:span 2;background:var(--color-bg);padding:36px 34px 40px;display:flex;flex-direction:column;gap:22px" class="x10">
         <div style="height:200px;border:6px solid var(--color-surface);outline:1px solid var(--color-divider)">
           <div class="slot" data-slot="bonta-cap-1"><span>Detalle de impresión UV sobre material rígido (madera, metal o acrílico) — plano cerrado del acabado.</span></div>
         </div>
         <div>
-          <h3 style="font-family:var(--font-heading);font-weight:600;font-size:28px;letter-spacing:-0.012em;margin:0 0 12px">Cama plana UV</h3>
-          <p style="margin:0 0 22px;font-size:15px;line-height:1.7;color:var(--color-neutral-700)">Impresión directa sobre superficies rígidas — madera, metal, PVC, MDF, acrílico y vidrio — en un solo pase.</p>
+          <h3 style="font-family:var(--font-ui);font-weight:600;font-size:22px;letter-spacing:-0.006em;margin:0 0 12px">Impresión sobre cualquier superficie</h3>
+          <p style="margin:0 0 22px;font-size:15px;line-height:1.7;color:var(--color-neutral-700)">Traé el material — madera, metal, PVC, MDF, acrílico o vidrio — y lo imprimimos directo, en un solo pase, con la definición de una impresión UV profesional.</p>
           <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:1px;background:var(--color-divider)">
             <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);background:var(--color-bg);padding:11px 0 11px 15px;border-left:2px solid var(--color-neutral-300);transition:border-color .3s, color .3s, padding-left .3s" class="x11">Impresión sobre madera y metal</li>
             <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);background:var(--color-bg);padding:11px 0 11px 15px;border-left:2px solid var(--color-neutral-300);transition:border-color .3s, color .3s, padding-left .3s" class="x12">PVC, MDF y acrílico</li>
@@ -121,7 +142,7 @@
           <div class="slot" data-slot="bonta-cap-2"><span>Banner o gráfica de gran formato ya colocada — algo que muestre la escala.</span></div>
         </div>
         <div>
-          <h3 style="font-family:var(--font-heading);font-weight:600;font-size:28px;letter-spacing:-0.012em;margin:0 0 12px">Plotter y vinilo</h3>
+          <h3 style="font-family:var(--font-ui);font-weight:600;font-size:22px;letter-spacing:-0.006em;margin:0 0 12px">Plotter y vinilo</h3>
           <p style="margin:0 0 22px;font-size:15px;line-height:1.7;color:var(--color-neutral-700)">Impresión en rollo y corte de vinilo de precisión, para todo lo que se mide en metros.</p>
           <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:1px;background:var(--color-divider)">
             <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);background:var(--color-bg);padding:11px 0 11px 15px;border-left:2px solid var(--color-neutral-300);transition:border-color .3s, color .3s, padding-left .3s" class="x16">Carteles y banners</li>
@@ -137,7 +158,7 @@
           <div class="slot" data-slot="bonta-cap-3"><span>Vidriera terminada o logo corpóreo iluminado de noche — fachada de local real.</span></div>
         </div>
         <div>
-          <h3 style="font-family:var(--font-heading);font-weight:600;font-size:28px;letter-spacing:-0.012em;margin:0 0 12px">Vidrieras y señalética</h3>
+          <h3 style="font-family:var(--font-ui);font-weight:600;font-size:22px;letter-spacing:-0.006em;margin:0 0 12px">Vidrieras y señalética</h3>
           <p style="margin:0 0 22px;font-size:15px;line-height:1.7;color:var(--color-neutral-700)">Vinilos de corte, letras corpóreas, cartelería iluminada y señalética para locales y fachadas.</p>
           <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:1px;background:var(--color-divider)">
             <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);background:var(--color-bg);padding:11px 0 11px 15px;border-left:2px solid var(--color-neutral-300);transition:border-color .3s, color .3s, padding-left .3s" class="x21">Vidrieras y vinilos de corte</li>
@@ -154,7 +175,7 @@
         </div>
         <div data-split="cap4" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px">
           <div>
-            <h3 style="font-family:var(--font-heading);font-weight:600;font-size:28px;letter-spacing:-0.012em;margin:0 0 12px">Stands, eventos y locales</h3>
+            <h3 style="font-family:var(--font-ui);font-weight:600;font-size:22px;letter-spacing:-0.006em;margin:0 0 12px">Stands, eventos y locales</h3>
             <p style="margin:0;font-size:15px;line-height:1.7;color:var(--color-neutral-700)">Estructura, gráfica aplicada y montaje como un solo proceso — de la carpintería a la instalación en el lugar.</p>
           </div>
           <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:1px;background:var(--color-divider)">
@@ -171,10 +192,10 @@
           <div class="slot" data-slot="bonta-cap-5"><span>Piezas de acrílico premium: cuadro bajo acrílico, trofeo o pieza plegada, sobre fondo neutro.</span></div>
         </div>
         <div>
-          <h3 style="font-family:var(--font-heading);font-weight:600;font-size:28px;letter-spacing:-0.012em;margin:0 0 12px">Piezas a medida</h3>
+          <h3 style="font-family:var(--font-ui);font-weight:600;font-size:22px;letter-spacing:-0.006em;margin:0 0 12px">Piezas a medida</h3>
           <p style="margin:0 0 22px;font-size:15px;line-height:1.7;color:var(--color-neutral-700)">Acrílico premium, prototipado 3D y piezas de producción chica para cuando el estándar no alcanza.</p>
           <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:1px;background:var(--color-divider)">
-            <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);background:var(--color-bg);padding:11px 0 11px 15px;border-left:2px solid var(--color-neutral-300);transition:border-color .3s, color .3s, padding-left .3s" class="x31">Bajo acrílico y cuadros</li>
+            <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);background:var(--color-bg);padding:11px 0 11px 15px;border-left:2px solid var(--color-neutral-300);transition:border-color .3s, color .3s, padding-left .3s" class="x31">Placas y letreros institucionales</li>
             <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);background:var(--color-bg);padding:11px 0 11px 15px;border-left:2px solid var(--color-neutral-300);transition:border-color .3s, color .3s, padding-left .3s" class="x32">Acrílico plegado y trofeos</li>
             <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);background:var(--color-bg);padding:11px 0 11px 15px;border-left:2px solid var(--color-neutral-300);transition:border-color .3s, color .3s, padding-left .3s" class="x33">Prototipado e impresión 3D</li>
             <li data-item style="font-family:var(--font-ui);font-size:13px;font-weight:400;letter-spacing:0.01em;color:var(--color-neutral-800);background:var(--color-bg);padding:11px 0 11px 15px;border-left:2px solid var(--color-neutral-300);transition:border-color .3s, color .3s, padding-left .3s" class="x34">Regalos empresariales</li>
@@ -187,7 +208,7 @@
   <section aria-label="Proyectos a medida" style="margin-top:102px;background:var(--wash);border-top:1px solid var(--wash-line);border-bottom:1px solid var(--wash-line)">
     <div data-pad style="max-width:1240px;margin:0 auto;padding:78px 40px 80px">
       <div data-split="remate" data-rv style="opacity:0;transform:translateY(14px);transition:opacity .8s ease,transform .8s ease;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:64px;align-items:end">
-        <h2 style="font-family:var(--font-heading);font-weight:400;font-size:clamp(32px,3.5vw,50px);line-height:1.1;letter-spacing:-0.018em;margin:0;max-width:26ch">Y si lo que necesitás no está en esta lista, <em style="font-style:italic;color:var(--brand)">también lo podemos hacer.</em></h2>
+        <h2 style="font-family:var(--font-heading);font-weight:400;font-size:clamp(32px,3.5vw,50px);line-height:1.1;letter-spacing:-0.018em;margin:0;max-width:26ch">Y si lo que necesitás no está en esta lista, <span style="font-style:normal;font-weight:600;color:var(--brand)">también lo podemos hacer.</span></h2>
         <div>
           <p style="margin:0 0 30px;font-size:16px;line-height:1.72;color:var(--color-neutral-700);max-width:40ch">Los proyectos especiales son parte del trabajo de todos los días. Contanos la idea y vemos juntos cómo producirla.</p>
           <a href="#contacto" style="display:inline-flex;align-items:center;gap:10px;font-family:var(--font-ui);font-size:12.5px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-bg);background:var(--brand);border:1px solid var(--brand);border-radius:var(--radius-md);padding:15px 28px;white-space:nowrap;transition:background .25s" class="x35">Hablemos de tu proyecto →</a>
@@ -211,10 +232,14 @@
     </div>
   </section>
 
-  <section id="proceso" data-pad style="max-width:1240px;margin:0 auto;padding:104px 40px 0">
+  <section id="proceso" data-pad style="max-width:1240px;margin:0 auto;padding:120px 40px 0">
     <div data-split="head" data-rv style="opacity:0;transform:translateY(14px);transition:opacity .8s ease,transform .8s ease;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px;align-items:end;padding-bottom:44px">
       <div>
-        <p style="display:flex;align-items:center;gap:11px;font-family:var(--font-ui);font-size:11px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:var(--brand);margin:0 0 20px"><img src="assets/img/logo-mark.png" alt="" width="15" height="15" style="display:block;width:15px;height:15px;opacity:0.9"><span style="color:var(--gold)">02</span> — Proceso</p>
+        <div aria-hidden="true" style="display:flex;align-items:center;gap:10px;margin-bottom:22px">
+          <span style="width:38px;height:1px;background:var(--gold);display:block"></span>
+          <span style="width:5px;height:5px;background:var(--gold);display:block;transform:rotate(45deg)"></span>
+        </div>
+        <p style="display:flex;align-items:center;gap:11px;font-family:var(--font-ui);font-size:12px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--brand);margin:0 0 20px"><img src="assets/img/logo-mark.png" alt="" width="15" height="15" style="display:block;width:15px;height:15px;opacity:0.9"><span style="color:var(--gold);font-size:15px">02</span> — Proceso</p>
         <h2 style="font-family:var(--font-heading);font-weight:400;font-size:clamp(36px,3.8vw,54px);line-height:1.04;letter-spacing:-0.018em;margin:0;max-width:18ch">De la idea al montaje, en cuatro pasos</h2>
       </div>
       <p style="margin:0;font-size:16px;line-height:1.72;color:var(--color-neutral-700);max-width:44ch">Con archivo listo o con una idea a medio armar — te acompañamos desde donde estés.</p>
@@ -223,22 +248,22 @@
     <div data-grid="4" style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:58px 40px;padding-top:16px">
       <div data-rv style="opacity:0;transform:translateY(18px);transition:opacity .9s ease,transform .9s ease;position:relative;padding-top:6px">
         <span aria-hidden="true" style="display:block;font-family:var(--font-heading);font-weight:400;font-size:96px;line-height:0.86;letter-spacing:-0.03em;font-feature-settings:'tnum';color:var(--gold);margin-bottom:20px">01</span>
-        <h3 style="font-family:var(--font-heading);font-weight:600;font-size:25px;letter-spacing:-0.01em;margin:0 0 12px;max-width:15ch">Contanos qué necesitás</h3>
+        <h3 style="font-family:var(--font-ui);font-weight:600;font-size:19px;letter-spacing:-0.005em;margin:0 0 12px;max-width:15ch">Contanos qué necesitás</h3>
         <p style="margin:0;font-size:14.5px;line-height:1.72;color:var(--color-neutral-700);max-width:30ch">Por WhatsApp, mail o una reunión — con el archivo listo o solo con la idea.</p>
       </div>
       <div data-rv style="opacity:0;transform:translateY(18px);transition:opacity .9s ease,transform .9s ease;transition-delay:.07s;position:relative;padding-top:6px">
         <span aria-hidden="true" style="display:block;font-family:var(--font-heading);font-weight:400;font-size:96px;line-height:0.86;letter-spacing:-0.03em;font-feature-settings:'tnum';color:var(--gold);margin-bottom:20px">02</span>
-        <h3 style="font-family:var(--font-heading);font-weight:600;font-size:25px;letter-spacing:-0.01em;margin:0 0 12px;max-width:15ch">Asesoramos y cotizamos</h3>
+        <h3 style="font-family:var(--font-ui);font-weight:600;font-size:19px;letter-spacing:-0.005em;margin:0 0 12px;max-width:15ch">Asesoramos y cotizamos</h3>
         <p style="margin:0;font-size:14.5px;line-height:1.72;color:var(--color-neutral-700);max-width:30ch">Si falta definir material, medidas o técnica, lo resolvemos con vos.</p>
       </div>
       <div data-rv style="opacity:0;transform:translateY(18px);transition:opacity .9s ease,transform .9s ease;transition-delay:.14s;position:relative;padding-top:6px">
         <span aria-hidden="true" style="display:block;font-family:var(--font-heading);font-weight:400;font-size:96px;line-height:0.86;letter-spacing:-0.03em;font-feature-settings:'tnum';color:var(--gold);margin-bottom:20px">03</span>
-        <h3 style="font-family:var(--font-heading);font-weight:600;font-size:25px;letter-spacing:-0.01em;margin:0 0 12px;max-width:15ch">Producción</h3>
+        <h3 style="font-family:var(--font-ui);font-weight:600;font-size:19px;letter-spacing:-0.005em;margin:0 0 12px;max-width:15ch">Producción</h3>
         <p style="margin:0;font-size:14.5px;line-height:1.72;color:var(--color-neutral-700);max-width:30ch">Imprimimos, cortamos y ensamblamos con control de calidad en cada máquina.</p>
       </div>
       <div data-rv style="opacity:0;transform:translateY(18px);transition:opacity .9s ease,transform .9s ease;transition-delay:.21s;position:relative;padding-top:6px">
         <span aria-hidden="true" style="display:block;font-family:var(--font-heading);font-weight:400;font-size:96px;line-height:0.86;letter-spacing:-0.03em;font-feature-settings:'tnum';color:var(--gold);margin-bottom:20px">04</span>
-        <h3 style="font-family:var(--font-heading);font-weight:600;font-size:25px;letter-spacing:-0.01em;margin:0 0 12px;max-width:15ch">Instalación</h3>
+        <h3 style="font-family:var(--font-ui);font-weight:600;font-size:19px;letter-spacing:-0.005em;margin:0 0 12px;max-width:15ch">Instalación</h3>
         <p style="margin:0;font-size:14.5px;line-height:1.72;color:var(--color-neutral-700);max-width:30ch">Coordinamos el montaje en el local o punto de venta, llave en mano si lo necesitás.</p>
       </div>
     </div>
@@ -249,35 +274,39 @@
     <div data-pad style="position:relative;max-width:1240px;margin:0 auto;padding:96px 40px 100px">
       <div data-split="why" style="display:grid;grid-template-columns:minmax(0,0.85fr) minmax(0,1.15fr);gap:80px;align-items:start">
         <div data-rv data-whysticky style="opacity:0;transform:translateY(14px);transition:opacity .8s ease,transform .8s ease;position:sticky;top:120px">
-          <p style="display:flex;align-items:center;gap:11px;font-family:var(--font-ui);font-size:11px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:var(--brand-light);margin:0 0 20px"><img src="assets/img/logo-mark-blanco.png" alt="" width="15" height="15" style="display:block;width:15px;height:15px;opacity:0.9"><span style="color:var(--gold)">03</span> — Por qué Bonta</p>
+          <div aria-hidden="true" style="display:flex;align-items:center;gap:10px;margin-bottom:22px">
+            <span style="width:38px;height:1px;background:var(--gold);display:block"></span>
+            <span style="width:5px;height:5px;background:var(--gold);display:block;transform:rotate(45deg)"></span>
+          </div>
+          <p style="display:flex;align-items:center;gap:11px;font-family:var(--font-ui);font-size:12px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--brand-light);margin:0 0 20px"><img src="assets/img/logo-mark-blanco.png" alt="" width="15" height="15" style="display:block;width:15px;height:15px;opacity:0.9"><span style="color:var(--gold);font-size:15px">03</span> — Por qué Bonta</p>
           <h2 style="font-family:var(--font-heading);font-weight:400;font-size:clamp(34px,3.5vw,50px);line-height:1.06;letter-spacing:-0.018em;margin:0;max-width:14ch;color:var(--color-bg)">Más de 40 años haciendo que las cosas se vean bien hechas.</h2>
         </div>
         <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column">
           <li data-rv style="opacity:0;transform:translateY(16px);transition:opacity .8s ease,transform .8s ease;display:grid;grid-template-columns:56px 1fr;gap:24px;padding:0 0 34px">
             <span style="width:44px;height:44px;border:1px solid color-mix(in srgb, var(--color-bg) 24%, transparent);border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;color:var(--brand-light)"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></span>
             <div>
-              <h3 style="font-family:var(--font-heading);font-weight:600;font-size:24px;margin:0 0 10px;color:var(--color-bg)">Más de 40 años en el oficio</h3>
+              <h3 style="font-family:var(--font-ui);font-weight:600;font-size:18px;letter-spacing:-0.003em;margin:0 0 10px;color:var(--color-bg)">Más de 40 años en el oficio</h3>
               <p style="margin:0;font-size:15px;line-height:1.72;color:color-mix(in srgb, var(--color-bg) 72%, transparent);max-width:52ch">Trayectoria suficiente para saber qué material, técnica y proveedor conviene en cada proyecto.</p>
             </div>
           </li>
           <li data-rv style="opacity:0;transform:translateY(16px);transition:opacity .8s ease,transform .8s ease;transition-delay:.07s;display:grid;grid-template-columns:56px 1fr;gap:24px;padding:34px 0;border-top:1px solid color-mix(in srgb, var(--color-bg) 16%, transparent)">
             <span style="width:44px;height:44px;border:1px solid color-mix(in srgb, var(--color-bg) 24%, transparent);border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;color:var(--brand-light)"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7l-9-5Z"/></svg></span>
             <div>
-              <h3 style="font-family:var(--font-heading);font-weight:600;font-size:24px;margin:0 0 10px;color:var(--color-bg)">Brief cerrado o idea abierta</h3>
+              <h3 style="font-family:var(--font-ui);font-weight:600;font-size:18px;letter-spacing:-0.003em;margin:0 0 10px;color:var(--color-bg)">Brief cerrado o idea abierta</h3>
               <p style="margin:0;font-size:15px;line-height:1.72;color:color-mix(in srgb, var(--color-bg) 72%, transparent);max-width:52ch">Ejecutamos exactamente lo que nos traés, o desarrollamos el proyecto completo cuando todavía no está definido.</p>
             </div>
           </li>
           <li data-rv style="opacity:0;transform:translateY(16px);transition:opacity .8s ease,transform .8s ease;transition-delay:.14s;display:grid;grid-template-columns:56px 1fr;gap:24px;padding:34px 0;border-top:1px solid color-mix(in srgb, var(--color-bg) 16%, transparent)">
             <span style="width:44px;height:44px;border:1px solid color-mix(in srgb, var(--color-bg) 24%, transparent);border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;color:var(--brand-light)"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16v4H4zM4 10h10v4H4zM4 16h16v4H4z"/></svg></span>
             <div>
-              <h3 style="font-family:var(--font-heading);font-weight:600;font-size:24px;margin:0 0 10px;color:var(--color-bg)">Estándar de marca grande</h3>
+              <h3 style="font-family:var(--font-ui);font-weight:600;font-size:18px;letter-spacing:-0.003em;margin:0 0 10px;color:var(--color-bg)">Estándar de marca grande</h3>
               <p style="margin:0;font-size:15px;line-height:1.72;color:color-mix(in srgb, var(--color-bg) 72%, transparent);max-width:52ch">Producimos para campañas y locales de marcas exigentes, con la misma exigencia sin importar el tamaño del pedido.</p>
             </div>
           </li>
           <li data-rv style="opacity:0;transform:translateY(16px);transition:opacity .8s ease,transform .8s ease;transition-delay:.21s;display:grid;grid-template-columns:56px 1fr;gap:24px;padding:34px 0 0;border-top:1px solid color-mix(in srgb, var(--color-bg) 16%, transparent)">
             <span style="width:44px;height:44px;border:1px solid color-mix(in srgb, var(--color-bg) 24%, transparent);border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;color:var(--brand-light)"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 8v8M8 12h8"/><circle cx="12" cy="12" r="9"/></svg></span>
             <div>
-              <h3 style="font-family:var(--font-heading);font-weight:600;font-size:24px;margin:0 0 10px;color:var(--color-bg)">Control total de tiempos</h3>
+              <h3 style="font-family:var(--font-ui);font-weight:600;font-size:18px;letter-spacing:-0.003em;margin:0 0 10px;color:var(--color-bg)">Control total de tiempos</h3>
               <p style="margin:0;font-size:15px;line-height:1.72;color:color-mix(in srgb, var(--color-bg) 72%, transparent);max-width:52ch">Con equipo y maquinaria propia coordinamos cada etapa — los plazos que te damos son los que cumplimos.</p>
             </div>
           </li>
@@ -286,10 +315,14 @@
     </div>
   </section>
 
-  <section id="trabajos" data-pad style="max-width:1240px;margin:0 auto;padding:104px 40px 0">
+  <section id="trabajos" data-pad style="max-width:1240px;margin:0 auto;padding:120px 40px 0">
     <div data-split="head" data-rv style="opacity:0;transform:translateY(14px);transition:opacity .8s ease,transform .8s ease;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px;align-items:end;padding-bottom:44px;border-bottom:1px solid var(--color-divider)">
       <div>
-        <p style="display:flex;align-items:center;gap:11px;font-family:var(--font-ui);font-size:11px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:var(--brand);margin:0 0 20px"><img src="assets/img/logo-mark.png" alt="" width="15" height="15" style="display:block;width:15px;height:15px;opacity:0.9"><span style="color:var(--gold)">04</span> — Trabajos</p>
+        <div aria-hidden="true" style="display:flex;align-items:center;gap:10px;margin-bottom:22px">
+          <span style="width:38px;height:1px;background:var(--gold);display:block"></span>
+          <span style="width:5px;height:5px;background:var(--gold);display:block;transform:rotate(45deg)"></span>
+        </div>
+        <p style="display:flex;align-items:center;gap:11px;font-family:var(--font-ui);font-size:12px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--brand);margin:0 0 20px"><img src="assets/img/logo-mark.png" alt="" width="15" height="15" style="display:block;width:15px;height:15px;opacity:0.9"><span style="color:var(--gold);font-size:15px">04</span> — Trabajos</p>
         <h2 style="font-family:var(--font-heading);font-weight:400;font-size:clamp(36px,3.8vw,54px);line-height:1.04;letter-spacing:-0.018em;margin:0;max-width:18ch">Piezas terminadas, en su lugar</h2>
       </div>
       <p style="margin:0;font-size:16px;line-height:1.72;color:var(--color-neutral-700);max-width:44ch">Cada trabajo con su foto y su ficha: qué se hizo, con qué técnica y dónde está instalado.</p>
@@ -301,7 +334,7 @@
           <div class="slot" data-slot="bonta-work-1"><span>Vidrieras Lacoste — fachada completa con el logo iluminado.</span></div>
         </div>
         <div style="display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:18px 0 15px;border-bottom:1px solid var(--color-divider)">
-          <h4 style="font-family:var(--font-heading);font-weight:600;font-size:22px;margin:0">Lacoste</h4>
+          <h4 style="font-family:var(--font-ui);font-weight:600;font-size:15.5px;letter-spacing:0.01em;margin:0">Lacoste</h4>
           <span style="font-family:var(--font-ui);font-size:11px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--color-neutral-600);text-align:right">Vidrieras + logo iluminado</span>
         </div>
       </article>
@@ -310,7 +343,7 @@
           <div class="slot" data-slot="bonta-work-2"><span>Cristóbal Colón — cartelería instalada, plano general.</span></div>
         </div>
         <div style="display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:18px 0 15px;border-bottom:1px solid var(--color-divider)">
-          <h4 style="font-family:var(--font-heading);font-weight:600;font-size:22px;margin:0">Cristóbal Colón</h4>
+          <h4 style="font-family:var(--font-ui);font-weight:600;font-size:15.5px;letter-spacing:0.01em;margin:0">Cristóbal Colón</h4>
           <span style="font-family:var(--font-ui);font-size:11px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--color-neutral-600);text-align:right">Cartelería e instalación</span>
         </div>
       </article>
@@ -319,7 +352,7 @@
           <div class="slot" data-slot="bonta-work-3"><span>Molca × Carrefour — punto de venta en góndola o isla, en tienda.</span></div>
         </div>
         <div style="display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:18px 0 15px;border-bottom:1px solid var(--color-divider)">
-          <h4 style="font-family:var(--font-heading);font-weight:600;font-size:22px;margin:0">Molca</h4>
+          <h4 style="font-family:var(--font-ui);font-weight:600;font-size:15.5px;letter-spacing:0.01em;margin:0">Molca</h4>
           <span style="font-family:var(--font-ui);font-size:11px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--color-neutral-600);text-align:right">Puntos de venta en Carrefour</span>
         </div>
       </article>
@@ -328,7 +361,7 @@
           <div class="slot" data-slot="bonta-work-4"><span>Cuadros bajo acrílico — pieza colgada, con luz que muestre el canto.</span></div>
         </div>
         <div style="display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:18px 0 15px;border-bottom:1px solid var(--color-divider)">
-          <h4 style="font-family:var(--font-heading);font-weight:600;font-size:22px;margin:0">Bajo acrílico</h4>
+          <h4 style="font-family:var(--font-ui);font-weight:600;font-size:15.5px;letter-spacing:0.01em;margin:0">Bajo acrílico</h4>
           <span style="font-family:var(--font-ui);font-size:11px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--color-neutral-600);text-align:right">Piezas premium</span>
         </div>
       </article>
@@ -337,7 +370,7 @@
           <div class="slot" data-slot="bonta-work-5"><span>Trofeos termoformados y mostradores de acrílico plegado, fondo neutro.</span></div>
         </div>
         <div style="display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:18px 0 15px;border-bottom:1px solid var(--color-divider)">
-          <h4 style="font-family:var(--font-heading);font-weight:600;font-size:22px;margin:0">Trofeos y mostradores</h4>
+          <h4 style="font-family:var(--font-ui);font-weight:600;font-size:15.5px;letter-spacing:0.01em;margin:0">Trofeos y mostradores</h4>
           <span style="font-family:var(--font-ui);font-size:11px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--color-neutral-600);text-align:right">Acrílico plegado</span>
         </div>
       </article>
@@ -346,7 +379,7 @@
           <div class="slot" data-slot="bonta-work-6"><span>Campaña Colapinto — 70 m² bajo vidrio, foto del montaje terminado.</span></div>
         </div>
         <div style="display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:18px 0 15px;border-bottom:1px solid var(--color-divider)">
-          <h4 style="font-family:var(--font-heading);font-weight:600;font-size:22px;margin:0">Campaña Colapinto</h4>
+          <h4 style="font-family:var(--font-ui);font-weight:600;font-size:15.5px;letter-spacing:0.01em;margin:0">Campaña Colapinto</h4>
           <span style="font-family:var(--font-ui);font-size:11px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--color-neutral-600);text-align:right">70 m² bajo vidrio</span>
         </div>
       </article>
@@ -357,7 +390,7 @@
     <div data-pad style="max-width:1240px;margin:0 auto;padding:66px 40px 68px">
       <div data-split="ficha" data-rv style="opacity:0;transform:translateY(14px);transition:opacity .8s ease,transform .8s ease;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:56px;align-items:center">
         <div>
-          <p style="display:flex;align-items:center;gap:11px;font-family:var(--font-ui);font-size:11px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:var(--brand);margin:0 0 18px"><img src="assets/img/logo-mark.png" alt="" width="15" height="15" style="display:block;width:15px;height:15px;opacity:0.9"><span style="color:var(--gold)">05</span> — Ficha técnica</p>
+          <p style="display:flex;align-items:center;gap:11px;font-family:var(--font-ui);font-size:12px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--brand);margin:0 0 18px"><img src="assets/img/logo-mark.png" alt="" width="15" height="15" style="display:block;width:15px;height:15px;opacity:0.9"><span style="color:var(--gold);font-size:15px">05</span> — Ficha técnica</p>
           <h2 style="font-family:var(--font-heading);font-weight:400;font-size:clamp(32px,3.2vw,46px);line-height:1.06;letter-spacing:-0.018em;margin:0;max-width:20ch">Equipamiento y capacidades</h2>
         </div>
         <div>
@@ -442,6 +475,6 @@
     <img src="assets/img/whatsapp.png" alt="" width="60" height="60" style="display:block;width:60px;height:60px;border-radius:50%">
   </a>
 </div>
-<script src="assets/js/site.js"></script>
+<script src="assets/js/site.js?v=2"></script>
 </body>
 </html>
