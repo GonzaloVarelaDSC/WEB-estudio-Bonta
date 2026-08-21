@@ -101,11 +101,6 @@
 .x51:hover { color:var(--brand) !important }
 .x52:hover { color:var(--brand) !important }
 .x53:hover { transform:translateY(0) scale(1.06) !important }
-.x54:hover { border-color:color-mix(in srgb, var(--gold) 55%, var(--wash-line)) !important }
-.x55:hover { border-left-color:var(--brand) !important;color:var(--brand) !important;padding-left:20px !important }
-.x56:hover { border-left-color:var(--brand) !important;color:var(--brand) !important;padding-left:20px !important }
-.x57:hover { border-left-color:var(--brand) !important;color:var(--brand) !important;padding-left:20px !important }
-.x58:hover { border-left-color:var(--brand) !important;color:var(--brand) !important;padding-left:20px !important }
 
 /* espacios para fotos — reemplazá cada .slot por <img src="assets/img/xxx.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block"> */
 .slot { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; text-align: center; padding: 18px; box-sizing: border-box; background: var(--color-surface); color: var(--color-neutral-600); font-family: var(--font-ui); font-size: 11.5px; line-height: 1.55; letter-spacing: 0.02em; }
