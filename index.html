@@ -8,7 +8,7 @@
 <link rel="icon" href="assets/img/logo-mark.png">
 <link rel="stylesheet" href="assets/css/tokens.css">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css?v=4">
+<link rel="stylesheet" href="assets/css/site.css?v=5">
 </head>
 <body>
 <div style="background:var(--color-bg);color:var(--color-text);font-family:var(--font-body);min-height:100vh">
@@ -39,6 +39,22 @@
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3 20l1.1-5.4A8.5 8.5 0 1 1 21 11.5Z"/></svg>
         WhatsApp
       </a>
+      <button type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menú" style="display:none;align-items:center;justify-content:center;width:42px;height:42px;padding:0;flex-shrink:0;border:1px solid var(--color-divider);border-radius:var(--radius-md);background:transparent;cursor:pointer;color:var(--color-text)">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="pointer-events:none">
+          <path data-menu-bar="top" d="M4 12L20 12" style="transform-origin:center;transform:translateY(-7px);transition:transform .3s cubic-bezier(.5,.85,.25,1.1)"></path>
+          <path data-menu-bar="mid" d="M4 12H20" style="transform-origin:center;transition:transform .3s cubic-bezier(.5,.85,.25,1.8)"></path>
+          <path data-menu-bar="bottom" d="M4 12H20" style="transform-origin:center;transform:translateY(7px);transition:transform .3s cubic-bezier(.5,.85,.25,1.1)"></path>
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" data-mobile-menu style="display:none;opacity:0;transform:translateY(-8px);transition:opacity .3s ease,transform .3s ease;position:absolute;top:100%;left:0;right:0;background:var(--color-bg);border-bottom:1px solid var(--color-divider);box-shadow:0 16px 28px color-mix(in srgb, #000000 12%, transparent)">
+      <nav data-pad style="display:flex;flex-direction:column;max-width:1240px;margin:0 auto;padding:8px 40px 16px">
+        <a href="#capacidades" data-menu-link style="padding:15px 0;font-family:var(--font-ui);font-size:14px;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;color:var(--color-neutral-800);border-bottom:1px solid var(--color-divider)" class="x59">Capacidades</a>
+        <a href="#proceso" data-menu-link style="padding:15px 0;font-family:var(--font-ui);font-size:14px;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;color:var(--color-neutral-800);border-bottom:1px solid var(--color-divider)" class="x60">Proceso</a>
+        <a href="#trabajos" data-menu-link style="padding:15px 0;font-family:var(--font-ui);font-size:14px;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;color:var(--color-neutral-800);border-bottom:1px solid var(--color-divider)" class="x61">Trabajos</a>
+        <a href="ficha-tecnica.html" data-menu-link style="padding:15px 0;font-family:var(--font-ui);font-size:14px;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;color:var(--color-neutral-800);border-bottom:1px solid var(--color-divider)" class="x62">Ficha técnica</a>
+        <a href="#contacto" data-menu-link style="padding:15px 0;font-family:var(--font-ui);font-size:14px;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;color:var(--color-neutral-800)" class="x63">Contacto</a>
+      </nav>
     </div>
   </header>
 
@@ -469,6 +485,6 @@
     <img src="assets/img/whatsapp.png" alt="" width="60" height="60" style="display:block;width:60px;height:60px;border-radius:50%">
   </a>
 </div>
-<script src="assets/js/site.js?v=4"></script>
+<script src="assets/js/site.js?v=5"></script>
 </body>
 </html>

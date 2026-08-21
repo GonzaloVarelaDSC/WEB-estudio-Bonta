@@ -97,6 +97,64 @@
     restart();
   }
 
+  /* menú mobile (botón hamburguesa) */
+  var menuBtn = $('[data-menu-toggle]'), menuPanel = $('[data-mobile-menu]');
+  var closeMenu = function () {
+    if (!menuBtn || !menuPanel) return;
+    menuBtn.setAttribute('aria-expanded', 'false');
+    menuPanel.style.opacity = '0';
+    menuPanel.style.transform = 'translateY(-8px)';
+    setTimeout(function () { menuPanel.style.display = 'none'; }, 300);
+  };
+  if (menuBtn && menuPanel) {
+    var openMenu = function () {
+      menuBtn.setAttribute('aria-expanded', 'true');
+      menuPanel.style.display = 'block';
+      requestAnimationFrame(function () {
+        menuPanel.style.opacity = '1';
+        menuPanel.style.transform = 'translateY(0)';
+      });
+    };
+    menuBtn.addEventListener('click', function () {
+      var open = menuBtn.getAttribute('aria-expanded') === 'true';
+      if (open) closeMenu(); else openMenu();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeMenu();
+    });
+    document.addEventListener('click', function (e) {
+      if (menuBtn.getAttribute('aria-expanded') !== 'true') return;
+      if (menuPanel.contains(e.target) || menuBtn.contains(e.target)) return;
+      closeMenu();
+    });
+  }
+
+  /* scroll suave hacia anclas internas, con offset para no tapar el título detrás del header sticky */
+  var HEADER_OFFSET = 108;
+  var smoothScrollTo = function (targetY, duration) {
+    var startY = window.scrollY, diff = targetY - startY, start = null;
+    var step = function (ts) {
+      if (start === null) start = ts;
+      var p = Math.min((ts - start) / duration, 1);
+      window.scrollTo(0, startY + diff * easeOutCubic(p));
+      if (p < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  };
+  $$('a[href^="#"]').forEach(function (a) {
+    var id = a.getAttribute('href').slice(1);
+    if (!id) return;
+    a.addEventListener('click', function (e) {
+      var target = document.getElementById(id);
+      if (!target) return;
+      e.preventDefault();
+      closeMenu();
+      var y = Math.max(0, target.getBoundingClientRect().top + window.scrollY - HEADER_OFFSET);
+      if (reduce) window.scrollTo(0, y); else smoothScrollTo(y, 850);
+      history.pushState(null, '', '#' + id);
+    });
+  });
+
   /* formulario -> mailto */
   var form = $('#form-contacto');
   if (form) form.addEventListener('submit', function (e) {

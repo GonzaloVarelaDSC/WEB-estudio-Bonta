@@ -18,8 +18,12 @@
   @keyframes bonta-marquee { from { transform: translate3d(0,0,0); } to { transform: translate3d(-50%,0,0); } }
   @media (prefers-reduced-motion: reduce) { [data-marquee] { animation: none !important; } }
   @media (max-width: 1180px) { [data-nav] { gap: 20px !important; } }
+  [data-menu-toggle][aria-expanded="true"] [data-menu-bar="top"] { transform: translateY(0) rotate(315deg) !important; }
+  [data-menu-toggle][aria-expanded="true"] [data-menu-bar="mid"] { transform: rotate(45deg) !important; }
+  [data-menu-toggle][aria-expanded="true"] [data-menu-bar="bottom"] { transform: translateY(0) rotate(135deg) !important; }
   @media (max-width: 1060px) {
     [data-nav] { display: none !important; }
+    [data-menu-toggle] { display: inline-flex !important; }
     [data-grid="3"], [data-grid="4"] { grid-template-columns: repeat(2, minmax(0,1fr)) !important; }
     [data-grid="cap"] { grid-template-columns: repeat(2, minmax(0,1fr)) !important; }
     [data-grid="cap"] > article { grid-column: span 1 !important; }
@@ -101,6 +105,11 @@
 .x56:hover { background:var(--brand) !important;color:var(--color-bg) !important }
 .x57:hover { background:var(--brand) !important;color:var(--color-bg) !important }
 .x58:hover { background:var(--brand) !important;color:var(--color-bg) !important }
+.x59:hover { color:var(--brand) !important }
+.x60:hover { color:var(--brand) !important }
+.x61:hover { color:var(--brand) !important }
+.x62:hover { color:var(--brand) !important }
+.x63:hover { color:var(--brand) !important }
 
 /* espacios para fotos — reemplazá cada .slot por <img src="assets/img/xxx.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block"> */
 .slot { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; text-align: center; padding: 18px; box-sizing: border-box; background: var(--color-surface); color: var(--color-neutral-600); font-family: var(--font-ui); font-size: 11.5px; line-height: 1.55; letter-spacing: 0.02em; }
