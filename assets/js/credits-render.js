@@ -7,7 +7,12 @@
   fetch("assets/credits.json")
     .then((r) => r.json())
     .then((credits) => {
-      const items = Object.values(credits).map((c) => `
+      const entries = Object.values(credits);
+      if (!entries.length) {
+        list.innerHTML = "<li>Por ahora no hay fotos con licencia externa en uso en el sitio — las capacidades se muestran con placeholders de texto hasta sumar fotos propias del estudio.</li>";
+        return;
+      }
+      const items = entries.map((c) => `
         <li>
           <strong>${c.title}</strong> — ${c.creator_url ? `<a href="${c.creator_url}" target="_blank" rel="noopener">${c.creator}</a>` : c.creator}
           · <a href="${c.license_url}" target="_blank" rel="noopener">${c.license.toUpperCase()} ${c.license_version || ""}</a>

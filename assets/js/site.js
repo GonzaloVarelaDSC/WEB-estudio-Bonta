@@ -120,7 +120,15 @@
       if (open) closeMenu(); else openMenu();
     });
     document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape') closeMenu();
+      if (menuBtn.getAttribute('aria-expanded') !== 'true') return;
+      if (e.key === 'Escape') { closeMenu(); menuBtn.focus(); return; }
+      /* retiene el foco dentro del menú mientras está abierto (Tab no se escapa hacia atrás) */
+      if (e.key === 'Tab') {
+        var focusables = [menuBtn].concat($$('[data-menu-link]'));
+        var first = focusables[0], last = focusables[focusables.length - 1];
+        if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+        else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+      }
     });
     document.addEventListener('click', function (e) {
       if (menuBtn.getAttribute('aria-expanded') !== 'true') return;

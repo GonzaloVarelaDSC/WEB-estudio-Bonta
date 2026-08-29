@@ -21,6 +21,16 @@
   [data-menu-toggle][aria-expanded="true"] [data-menu-bar="top"] { transform: translateY(0) rotate(315deg) !important; }
   [data-menu-toggle][aria-expanded="true"] [data-menu-bar="mid"] { transform: rotate(45deg) !important; }
   [data-menu-toggle][aria-expanded="true"] [data-menu-bar="bottom"] { transform: translateY(0) rotate(135deg) !important; }
+
+  /* área táctil: los puntos del carrusel del hero miden 2px de alto visualmente,
+     este ::before agrega una zona de toque de 44x44 centrada sin cambiar el trazo visible */
+  [data-hero-dot] { position: relative; }
+  [data-hero-dot]::before { content: ""; position: absolute; top: 50%; left: 50%; width: 44px; height: 44px; transform: translate(-50%, -50%); }
+
+  /* área táctil: links de nav de header/footer, agranda el alto clickeable sin mover el layout visual */
+  [data-nav] a { padding-top: 12px !important; margin-top: -12px !important; }
+  .x47, .x48, .x49, .x50, .x51, .x52 { display: inline-block; padding: 10px 0 !important; margin: -10px 0 !important; }
+  .f1 { display: inline-block; padding: 10px 0 !important; margin: -10px 0 !important; }
   @media (max-width: 1060px) {
     [data-nav] { display: none !important; }
     [data-menu-toggle] { display: inline-flex !important; }
