@@ -4,7 +4,7 @@
     --brand: #13077a;
     --brand-soft: color-mix(in srgb, #13077a 7%, transparent);
     --brand-light: color-mix(in srgb, #13077a 34%, #f3f2f2);
-    --font-ui: "Space Grotesk", system-ui, sans-serif;
+    --font-ui: "Manrope", system-ui, sans-serif;
     --ink: #14113d;
     --paper-2: color-mix(in srgb, var(--color-surface) 62%, var(--color-bg));
     --gold: #b68235;
@@ -17,7 +17,6 @@
   [data-rv][data-shown] { opacity: 1 !important; transform: none !important; }
   @keyframes bonta-marquee { from { transform: translate3d(0,0,0); } to { transform: translate3d(-50%,0,0); } }
   @media (prefers-reduced-motion: reduce) { [data-marquee] { animation: none !important; } }
-  @media (max-width: 1180px) { [data-nav] { gap: 20px !important; } }
   [data-menu-toggle][aria-expanded="true"] [data-menu-bar="top"] { transform: translateY(0) rotate(315deg) !important; }
   [data-menu-toggle][aria-expanded="true"] [data-menu-bar="mid"] { transform: rotate(45deg) !important; }
   [data-menu-toggle][aria-expanded="true"] [data-menu-bar="bottom"] { transform: translateY(0) rotate(135deg) !important; }
@@ -27,13 +26,18 @@
   [data-hero-dot] { position: relative; }
   [data-hero-dot]::before { content: ""; position: absolute; top: 50%; left: 50%; width: 44px; height: 44px; transform: translate(-50%, -50%); }
 
-  /* área táctil: links de nav de header/footer, agranda el alto clickeable sin mover el layout visual */
-  [data-nav] a { padding-top: 12px !important; margin-top: -12px !important; }
+  /* área táctil: links de nav de footer, agranda el alto clickeable sin mover el layout visual */
   .x47, .x48, .x49, .x50, .x51, .x52 { display: inline-block; padding: 10px 0 !important; margin: -10px 0 !important; }
   .f1 { display: inline-block; padding: 10px 0 !important; margin: -10px 0 !important; }
+
+  /* menú desplegable (único control de navegación, header = logo + hamburguesa en todos los anchos):
+     en pantallas grandes se muestra como una barra horizontal centrada en vez de lista apilada */
+  @media (min-width: 1061px) {
+    [data-mobile-menu] nav { flex-direction: row !important; justify-content: center; gap: 44px; padding: 22px 40px !important; }
+    [data-menu-link] { border-bottom: 0 !important; padding: 8px 0 !important; }
+  }
+
   @media (max-width: 1060px) {
-    [data-nav] { display: none !important; }
-    [data-menu-toggle] { display: inline-flex !important; }
     [data-grid="3"], [data-grid="4"] { grid-template-columns: repeat(2, minmax(0,1fr)) !important; }
     [data-grid="cap"] { grid-template-columns: repeat(2, minmax(0,1fr)) !important; }
     [data-grid="cap"] > article { grid-column: span 1 !important; }
@@ -58,12 +62,6 @@
 
 /* estados (generados desde el diseño) */
 .x1:hover { color:#f3f2f2 !important }
-.x2:hover { color:var(--brand) !important;border-bottom-color:var(--brand) !important }
-.x3:hover { color:var(--brand) !important;border-bottom-color:var(--brand) !important }
-.x4:hover { color:var(--brand) !important;border-bottom-color:var(--brand) !important }
-.x5:hover { color:var(--brand) !important;border-bottom-color:var(--brand) !important }
-.x6:hover { color:var(--brand) !important;border-bottom-color:var(--brand) !important }
-.x7:hover { background:var(--brand-soft) !important }
 .x8:hover { background:color-mix(in srgb, var(--color-bg) 12%, transparent) !important;border-color:var(--color-bg) !important }
 .x9:hover { color:var(--color-bg) !important;border-bottom-color:var(--color-bg) !important }
 .x10:hover { background:var(--paper-2) !important }
